@@ -125,7 +125,7 @@ oxpc_array_serialize_to_buffer(
   serialized_arr->type = arr->type;
   // byte count is the total count *after* the byte_count element until the start of the next
   // element
-  serialized_arr->byte_count = oxpc_array_serialized_size(obj) - 8;
+  serialized_arr->byte_count = *((uint32_t*)oxpc_array_serialized_size(obj) - 8);
   serialized_arr->count = arr->count;
 
   uint8_t* elements_buffer = serialized_arr->bytes;

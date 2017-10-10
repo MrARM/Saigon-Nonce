@@ -9,6 +9,8 @@
 
 #include "unjail.h"
 #include "extra_offsets.h"
+#include "offsets.h"
+#include "libjb.h"
 
 // @qwertyoruiop's KPP bypass
 
@@ -830,7 +832,7 @@ go_extra_recipe(void)
 {
     int rv;
     
-    kpp(0, 0, kernel_base, kaslr_shift);
+    kpp(0, 0, OFFSET(main_kernel_base), kaslr_shift);
     
     struct utsname uts;
     uname(&uts);
@@ -887,4 +889,46 @@ go_extra_recipe(void)
     }
 
     return 1;
+}
+
+// TODO: Actually finish this
+kern_return_t go_kppless() {
+    
+    kern_return_t ret = KERN_FAILURE;
+    uint64_t kernel_base = OFFSET(main_kernel_base);
+    uint64_t allproc = 0xf; // TODO
+    uint64_t credpatch = 0xf; // TODO
+    
+    int rv;
+    
+    if (mp) {
+        hibit_guess = 0xFFFFFFE000000000;
+    }
+    
+    
+    rv = init_kernel(kernel_base, NULL);
+    assert(rv == 0);
+
+    uint64_t trust_chain = find_trustcache();
+    uint64_t amficache = find_amficache();
+    
+    term_kernel();
+    
+    
+    // INSTALL CYDIA HERE
+    
+    // ----
+    
+    printf("trust_chain = 0x%llx\n", trust_chain);
+    
+    struct trust_mem mem;
+    mem.next = kread_uint64(trust_chain);
+    *(uint64_t *)&mem.uuid[0] = 0xabadbabeabadbabe;
+    *(uint64_t *)&mem.uuid[8] = 0xabadbabeabadbabe;
+    
+//    rv = grab_hashes("/", kread, amficache, mem.next);
+    
+    
+    
+    return ret;
 }

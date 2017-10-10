@@ -10,7 +10,9 @@
 #define OFFSET(offset)									offsets_get_offsets().offset
 
 typedef struct offsets_e {
+    uint64_t main_kernel_base; // used by extra_recipe.. (not same as g_kernel_base)
 	uint64_t kernel_base;
+    uint64_t kernel_text;
     char * driver_name;
     int encode_frame_input_buffer_size;
     int encode_frame_output_buffer_size;
@@ -50,12 +52,10 @@ typedef struct offsets_e {
 
 } offsets_t;
 
-
-
 int offsets_init();
 offsets_t offsets_get_offsets();
 uint64_t offsets_get_kernel_base();
-void offsets_set_kernel_base(void * kernel_base);
+void offsets_set_kernel_base(uint64_t kernel_base);
 
 kern_return_t set_driver_offsets(char * driver_name);
 

@@ -111,7 +111,7 @@ oxpc_dictionary_serialized_size(
 
   size_t total = 0;
   for (uint32_t i = 0; i < dict->count; i++) {
-    size_t key_size = round_up_32(strlen(dict->keys[i]) + 1, 4);
+    size_t key_size = round_up_32((uint32_t)(strlen(dict->keys[i]) + 1), 4);
     size_t value_size = oxpc_object_serialized_size(dict->values[i]);
 
     if (key_size > oxpc_arbitrary_size_limit) {
@@ -141,7 +141,7 @@ oxpc_dictionary_serialize_to_buffer(
 
   oxpc_dictionary_serialized_t serialized_dict = (oxpc_dictionary_serialized_t)buffer;
   serialized_dict->type = dict->type;
-  serialized_dict->byte_count = oxpc_dictionary_serialized_size(obj) - 8;
+  serialized_dict->byte_count = (uint32_t)(oxpc_dictionary_serialized_size(obj) - 8);
   serialized_dict->count = dict->count;
 
   uint8_t* dict_buffer = serialized_dict->bytes;
@@ -150,7 +150,7 @@ oxpc_dictionary_serialize_to_buffer(
     size_t key_size = strlen(dict->keys[i]) + 1;
     memcpy(dict_buffer, dict->keys[i], key_size);
     // maintain alignment:
-    key_size = round_up_32(key_size, 4);
+    key_size = round_up_32((uint32_t)key_size, 4);
     dict_buffer += key_size;
 
     size_t value_size = oxpc_object_serialized_size(dict->values[i]);

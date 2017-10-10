@@ -34,7 +34,7 @@ oxpc_data_alloc(
   }
   memset(data, 0, allocation_size);
   data->type = OXPC_TYPE_DATA;
-  data->byte_length = byte_length;
+  data->byte_length = (uint32_t)byte_length;
   memcpy(data->bytes, bytes, byte_length);
 
   return (oxpc_object_t)data;

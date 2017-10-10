@@ -18,6 +18,6 @@
 
 kern_return_t kernel_read_init();
 kern_return_t kernel_read_cleanup();
-kern_return_t kernel_read_leak_kernel_base(void ** kernel_base);
+kern_return_t kernel_read_leak_kernel_base(uint64_t * kernel_base);
 
 #endif /* KERNEL_READ_H_ */

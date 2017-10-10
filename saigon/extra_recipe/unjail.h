@@ -26,6 +26,7 @@ extern uint64_t kaslr_shift;
 extern uint64_t kernel_base;
 
 int go_extra_recipe(void);
+kern_return_t go_kppless();
 
 size_t kread(uint64_t where, void *p, size_t size);
 uint64_t kread_uint64(uint64_t where);

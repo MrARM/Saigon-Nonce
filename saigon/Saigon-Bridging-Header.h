@@ -15,5 +15,5 @@ int prepare_amfid(mach_port_t tp);
 int ziva_go();
 
 // extra_recipe
-bool set_generator(const char *gen);
+int go_extra_recipe(void);
 

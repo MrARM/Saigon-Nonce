@@ -25,7 +25,7 @@ oxpc_string_alloc(
   }
   
   oxpc_string_t str = NULL;
-  size_t rounded_up_string_length = round_up_32(byte_length, 4);
+  size_t rounded_up_string_length = round_up_32((uint32_t)byte_length, 4);
   size_t allocation_size = sizeof(*str) + rounded_up_string_length;
   
   str = malloc(allocation_size);
@@ -34,7 +34,7 @@ oxpc_string_alloc(
   }
   memset(str, 0, allocation_size);
   str->type = OXPC_TYPE_STRING;
-  str->byte_length = byte_length;
+  str->byte_length = (uint32_t)byte_length;
   memcpy(str->bytes, bytes, byte_length);
 
   return (oxpc_object_t)str;

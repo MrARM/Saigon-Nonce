@@ -330,7 +330,7 @@ fakesign(void* code,
   CS_SuperBlob* superblob = malloc(superblob_size);
   memset(superblob, 0, superblob_size);
 #endif
-  *blob_size = cdsize;
+  *blob_size = (uint32_t)cdsize;
   return cd;
 }
 

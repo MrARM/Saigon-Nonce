@@ -30,8 +30,8 @@
 
 kern_return_t heap_spray_init();
 void heap_spray_cleanup();
-kern_return_t heap_spray_start_spraying(void ** kernel_allocated_data);
-void heap_spray_prepare_buffer_for_rop(void * function, uint64_t arg0, 
+kern_return_t heap_spray_start_spraying(uint64_t * kernel_allocated_data);
+void heap_spray_prepare_buffer_for_rop(uint64_t function, uint64_t arg0, 
 	uint64_t arg1, uint64_t arg2);
 
 

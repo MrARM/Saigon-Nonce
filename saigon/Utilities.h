@@ -23,6 +23,7 @@ void set_self_port_name(mach_port_name_t pt_name);
 mach_port_name_t get_self_port_name();
 
 void kernel_panic();
+void respring_memes();
 char * utils_get_base64_payload(void * buffer, size_t length);
 
 int offsets_init();

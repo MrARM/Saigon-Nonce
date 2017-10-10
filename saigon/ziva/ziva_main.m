@@ -131,7 +131,7 @@ cleanup:
 int ziva_go() {
     
 	kern_return_t ret = KERN_SUCCESS;
-	void * kernel_base = NULL;
+	uint64_t kernel_base = 0;
 	void * kernel_spray_address = NULL;
 
     printf("[*] starting ziVA..\n");
@@ -156,7 +156,7 @@ int ziva_go() {
         return 0; // Fail
 	}
 
-    printf("[INFO]: Got kernel base at: %p\n", kernel_base);
+    printf("[INFO]: Got kernel base at: %llx\n", kernel_base);
 
 	offsets_set_kernel_base(kernel_base);
     

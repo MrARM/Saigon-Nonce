@@ -65,6 +65,7 @@
 kern_return_t apple_ave_utils_add_client(io_connect_t conn);
 kern_return_t apple_ave_utils_remove_client(io_connect_t conn);
 kern_return_t apple_ave_utils_get_connection(io_connect_t * conn_out);
+void fuzz_encode_frames(io_connect_t conn, uint32_t bad_surface, uint32_t surface_id);
 kern_return_t apple_ave_utils_prepare_to_encode_frames(io_connect_t conn, void * input_buffer,
  void * output_buffer);
 kern_return_t apple_ave_utils_encode_frame(io_connect_t conn, void * input_buffer,

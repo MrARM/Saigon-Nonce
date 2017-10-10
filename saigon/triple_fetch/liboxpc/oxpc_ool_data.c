@@ -67,7 +67,7 @@ oxpc_ool_data_serialize_to_buffer(
   oxpc_ool_data_t data = (oxpc_ool_data_t)obj;
   oxpc_ool_data_serialized_t serialized_data = (oxpc_ool_data_serialized_t)buffer;
   serialized_data->type = OXPC_TYPE_DATA; // OOL_DATA isn't a real type
-  serialized_data->size = data->size;
+  serialized_data->size = (uint32_t)data->size;
   oxpc_port_list_append(ports, data->port);
 }
 

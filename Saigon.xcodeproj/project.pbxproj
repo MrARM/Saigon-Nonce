@@ -51,7 +51,6 @@
 		75213EEA1F776FA0003FA69D /* oxpc_utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 75213EDD1F776FA0003FA69D /* oxpc_utils.c */; };
 		75213EEB1F776FA0003FA69D /* oxpc_uuid.c in Sources */ = {isa = PBXBuildFile; fileRef = 75213EDF1F776FA0003FA69D /* oxpc_uuid.c */; };
 		75213EED1F777000003FA69D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75213EEC1F777000003FA69D /* Info.plist */; };
-		75D8DCC91F77895200AC2763 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75D8DCC81F77895200AC2763 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +60,7 @@
 		660FFFAB1F883DEA0076DF78 /* set.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = set.m; sourceTree = "<group>"; };
 		660FFFAE1F883F450076DF78 /* arch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = arch.h; sourceTree = "<group>"; };
 		660FFFAF1F883F610076DF78 /* mach-o.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mach-o.h"; sourceTree = "<group>"; };
+		66F1AAF21F8C65A800103DC1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		75213E6A1F776EED003FA69D /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
 		75213E6D1F776F3F003FA69D /* AlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertViewController.swift; path = saigon/AlertViewController.swift; sourceTree = "<group>"; };
 		75213E6E1F776F3F003FA69D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = saigon/AppDelegate.swift; sourceTree = "<group>"; };
@@ -157,7 +157,6 @@
 		75CCC4281F85C52C00E46AE5 /* launchctl */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = launchctl; path = saigon/launchctl; sourceTree = "<group>"; };
 		75CCC4291F85C52C00E46AE5 /* reload */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = reload; path = saigon/reload; sourceTree = "<group>"; };
 		75CCC42A1F85C52C00E46AE5 /* tar */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = tar; path = saigon/tar; sourceTree = "<group>"; };
-		75D8DCC81F77895200AC2763 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Saigon/Images.xcassets; sourceTree = "<group>"; };
 		EA9900E31E1E9F060056FEBD /* Saigon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Saigon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -340,7 +339,7 @@
 		EA9900DA1E1E9F060056FEBD = {
 			isa = PBXGroup;
 			children = (
-				75D8DCC81F77895200AC2763 /* Images.xcassets */,
+				66F1AAF21F8C65A800103DC1 /* Images.xcassets */,
 				75213E6C1F776F00003FA69D /* saigon */,
 				EA9900E41E1E9F060056FEBD /* Products */,
 				75213E691F776EEC003FA69D /* Frameworks */,
@@ -415,7 +414,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75D8DCC91F77895200AC2763 /* Images.xcassets in Resources */,
 				75213EED1F777000003FA69D /* Info.plist in Resources */,
 				75213E781F776F3F003FA69D /* Main.storyboard in Resources */,
 			);
@@ -580,6 +578,7 @@
 			buildSettings = {
 				ARCHS = arm64;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = NO;
 				DEVELOPMENT_TEAM = Y8V89298F7;
@@ -606,6 +605,7 @@
 			buildSettings = {
 				ARCHS = arm64;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = NO;
 				DEVELOPMENT_TEAM = Y8V89298F7;

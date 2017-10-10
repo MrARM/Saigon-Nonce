@@ -113,13 +113,12 @@ struct Logging {
                     self.tryButton.setTitle("bypassing kpp..",for: .normal)
                     
                     // Run extra_recipe (final step)
-                    print("Setting nonce now!")
-                    if set_generator("0dc448240696866b0cc1b2ac3eca4ce22af11cb3") {
+                    if set_generator("0dc448240696866b0cc1b2ac3eca4ce22af11cb3"){
                         self.progressView.setProgress(1.0, animated: true)
                         self.tryButton.isEnabled = false
                         self.tryButton.setTitle("done 🎉",for: .disabled)
                     } else {
-                        Logging.message = "Setting Nonce"
+                        Logging.message = "bypassing KPP"
                         self.showFailure()
                     }
                     

