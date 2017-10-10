@@ -75,7 +75,7 @@ void kernel_panic () {
         IOConnectCallMethod(c, 13, input, 3, 0, 0, 0, 0, 0, 0);
         
         // no? exit then
-        exit(0);
+        //exit(0);
     }
     respring_memes();
 }
