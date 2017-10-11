@@ -1,0 +1,1864 @@
+[*] Welcome to Saigon
+[INFO]: machine: iPhone8,1
+[INFO]: build: 14E304
+[INFO]: version: 10.3.1
+[INFO]: sysname: Darwin
+[INFO]: nodename: varmobile
+[INFO]: release: 16.5.0
+[INFO]: kernel version: Darwin Kernel Version 16.5.0: Thu Feb 23 23:22:54 PST 2017; root:xnu-3789.52.2~7/RELEASE_ARM64_S8000
+[INFO]: machine: iPhone8,1
+[INFO]: Detected RELEASE_ARM64_S8000
+[STEP] triple_fetch(1/4)
+[*] starting Triple Fetch
+invocation_size: 85, shm_size: 8000
+mapped shm port at: 1027d8000
+[INFO]: shm_port: 100b - shm_size: 8000
+[INFO]: started flipper thread
+flipper arg: 0x1027d8040
+[INFO]: original_q1:    0x4141226e71682240
+[INFO]: replacement_q1: 0x4141416e71682240
+[INFO]: original_q2:    0x0120204020414141
+[INFO]: original_q3:    0x6573730022000000
+[INFO]: replacement_q3: 0x0000000022414141
+[INFO]: mapped fixed addr
+[INFO]: found at: 191238cd4
+target selector address: 18fb14802
+stack pivot: 18fce8ad4
+[INFO]: found mach_msg epilogue gadget: 18fc0b11c
+[INFO]: found mach_msg gadget: 18fc0b0b0
+[INFO]: found at: 18fb410b0
+[INFO]: Sent exploit message [0]
+[INFO]: Sent exploit message [1]
+[INFO]: Sent exploit message [2]
+[INFO]: Sent exploit message [3]
+[INFO]: Sent exploit message [4]
+[INFO]: Sent exploit message [5]
+[INFO]: Sent exploit message [6]
+[INFO]: Sent exploit message [7]
+[INFO]: Sent exploit message [8]
+[INFO]: Sent exploit message [9]
+[INFO]: Sent exploit message [10]
+[INFO]: Sent exploit message [11]
+[INFO]: Sent exploit message [12]
+[INFO]: Sent exploit message [13]
+[INFO]: Sent exploit message [14]
+[INFO]: Sent exploit message [15]
+[INFO]: Sent exploit message [16]
+[INFO]: Sent exploit message [17]
+[INFO]: Sent exploit message [18]
+[INFO]: Sent exploit message [19]
+[INFO]: Sent exploit message [20]
+[INFO]: Sent exploit message [21]
+[INFO]: Sent exploit message [22]
+[INFO]: Sent exploit message [23]
+[INFO]: Sent exploit message [24]
+[INFO]: Sent exploit message [25]
+[INFO]: Sent exploit message [26]
+[INFO]: Sent exploit message [27]
+[INFO]: Got task port message
+[INFO]: task port: 140f
+[INFO]: Triple Fetch succeeded
+[INFO]: Got target service task port: 140f
+[STEP] Patching amfid(2/4)
+[INFO]: new thread running in child: 107073
+[INFO]: allocated a remote out buffer: 1001ac000
+[INFO]: thread state updated in target: 107073
+[INFO]: remote function call return value: 0
+[INFO]: new thread running in child: 107077
+[INFO]: allocated a remote out buffer: 1001ac000
+[INFO]: thread state updated in target: 107077
+[INFO]: remote function call return value: 0
+[INFO]: new thread running in child: 10707b
+[INFO]: allocated a remote out buffer: 1001ac000
+[INFO]: thread state updated in target: 10707b
+[INFO]: remote function call return value: 0
+[INFO]: new thread running in child: 10707f
+[INFO]: allocated a remote out buffer: 1001ac000
+[INFO]: allocated a remote out buffer: 1001b0000
+[INFO]: thread state updated in target: 10707f
+[INFO]: remote function call return value: 0
+[INFO]: new thread running in child: 1071ab
+[INFO]: thread state updated in target: 1071ab
+[INFO]: remote function call return value: d
+[INFO] /sbin/launchd - pid: 1
+[INFO]: new thread running in child: 160b
+[INFO]: thread state updated in target: 160b
+[INFO]: remote function call return value: 1b
+[INFO] /usr/libexec/UserEventAgent - pid: 22
+[INFO]: new thread running in child: 180b
+[INFO]: thread state updated in target: 180b
+[INFO]: remote function call return value: 16
+[INFO] /usr/libexec/fseventsd - pid: 26
+[INFO]: new thread running in child: 107203
+[INFO]: thread state updated in target: 107203
+[INFO]: remote function call return value: 16
+[INFO] /usr/sbin/mediaserverd - pid: 27
+[INFO]: new thread running in child: 107303
+[INFO]: thread state updated in target: 107303
+[INFO]: remote function call return value: 14
+[INFO] /usr/libexec/configd - pid: 32
+[INFO]: new thread running in child: 107403
+[INFO]: thread state updated in target: 107403
+[INFO]: remote function call return value: 14
+[INFO] /usr/libexec/keybagd - pid: 37
+[INFO]: new thread running in child: 107503
+[INFO]: thread state updated in target: 107503
+[INFO]: remote function call return value: 10
+[INFO] /usr/libexec/atc - pid: 35
+[INFO]: new thread running in child: 107603
+[INFO]: thread state updated in target: 107603
+[INFO]: remote function call return value: f
+[INFO] /usr/sbin/wifid - pid: 41
+[INFO]: new thread running in child: 107703
+[INFO]: thread state updated in target: 107703
+[INFO]: remote function call return value: 38
+[INFO] /System/Library/CoreServices/SpringBoard.app/SpringBoard - pid: 53
+[INFO]: new thread running in child: 107803
+[INFO]: thread state updated in target: 107803
+[INFO]: remote function call return value: 11
+[INFO] /usr/libexec/logd - pid: 42
+[INFO]: new thread running in child: 107903
+[INFO]: thread state updated in target: 107903
+[INFO]: remote function call return value: 57
+[INFO] /System/Library/PrivateFrameworks/IDS.framework/identityservicesd.app/identityservicesd - pid: 47
+[INFO]: new thread running in child: 107a03
+[INFO]: thread state updated in target: 107a03
+[INFO]: remote function call return value: 17
+[INFO] /usr/libexec/backboardd - pid: 56
+[INFO]: new thread running in child: 107b03
+[INFO]: thread state updated in target: 107b03
+[INFO]: remote function call return value: 16
+[INFO] /usr/libexec/locationd - pid: 59
+[INFO]: new thread running in child: 107c03
+[INFO]: thread state updated in target: 107c03
+[INFO]: remote function call return value: 12
+[INFO] /usr/libexec/timed - pid: 58
+[INFO]: new thread running in child: 107d03
+[INFO]: thread state updated in target: 107d03
+[INFO]: remote function call return value: 12
+[INFO] /usr/sbin/BTServer - pid: 60
+[INFO]: new thread running in child: 107e03
+[INFO]: thread state updated in target: 107e03
+[INFO]: remote function call return value: 46
+[INFO] /System/Library/PrivateFrameworks/IMCore.framework/imagent.app/imagent - pid: 62
+[INFO]: new thread running in child: 107f03
+[INFO]: thread state updated in target: 107f03
+[INFO]: remote function call return value: 16
+[INFO] /usr/libexec/lockdownd - pid: 66
+[INFO]: new thread running in child: 108003
+[INFO]: thread state updated in target: 108003
+[INFO]: remote function call return value: 45
+[INFO] /System/Library/PrivateFrameworks/IAP.framework/Support/iaptransportd - pid: 68
+[INFO]: new thread running in child: 108103
+[INFO]: thread state updated in target: 108103
+[INFO]: remote function call return value: 5c
+[INFO] /System/Library/PrivateFrameworks/MobileContainerManager.framework/Support/containermanagerd - pid: 61
+[INFO]: new thread running in child: 108203
+[INFO]: thread state updated in target: 108203
+[INFO]: remote function call return value: 16
+[INFO] /usr/sbin/fairplayd.H2 - pid: 73
+[INFO]: new thread running in child: 108303
+[INFO]: thread state updated in target: 108303
+[INFO]: remote function call return value: 45
+[INFO] /System/Library/Frameworks/CoreTelephony.framework/Support/CommCenter - pid: 74
+[INFO]: new thread running in child: 108403
+[INFO]: thread state updated in target: 108403
+[INFO]: remote function call return value: 11
+[INFO] /usr/sbin/notifyd - pid: 75
+[INFO]: new thread running in child: 108503
+[INFO]: thread state updated in target: 108503
+[INFO]: remote function call return value: 11
+[INFO] /usr/sbin/syslogd - pid: 21
+[INFO]: new thread running in child: 108603
+[INFO]: thread state updated in target: 108603
+[INFO]: remote function call return value: 4e
+[INFO] /System/Library/PrivateFrameworks/FileProvider.framework/Support/fileproviderd - pid: 23
+[INFO]: new thread running in child: 108703
+[INFO]: thread state updated in target: 108703
+[INFO]: remote function call return value: 4c
+[INFO] /System/Library/PrivateFrameworks/MediaRemote.framework/Support/mediaremoted - pid: 28
+[INFO]: new thread running in child: 108803
+[INFO]: thread state updated in target: 108803
+[INFO]: remote function call return value: 11
+[INFO] /usr/libexec/misd - pid: 31
+[INFO]: new thread running in child: 108903
+[INFO]: thread state updated in target: 108903
+[INFO]: remote function call return value: 15
+[INFO] /usr/libexec/routined - pid: 30
+[INFO]: new thread running in child: 108a03
+[INFO]: thread state updated in target: 108a03
+[INFO]: remote function call return value: 36
+[INFO] /System/Library/Frameworks/HealthKit.framework/healthd - pid: 33
+[INFO]: new thread running in child: 108b03
+[INFO]: thread state updated in target: 108b03
+[INFO]: remote function call return value: 31
+[INFO] /System/Library/CoreServices/powerd.bundle/powerd - pid: 34
+[INFO]: new thread running in child: 108c03
+[INFO]: thread state updated in target: 108c03
+[INFO]: remote function call return value: 52
+[INFO] /System/Library/PrivateFrameworks/FamilyNotification.framework/familynotificationd - pid: 39
+[INFO]: new thread running in child: 108d03
+[INFO]: thread state updated in target: 108d03
+[INFO]: remote function call return value: 15
+[INFO] /usr/libexec/installd - pid: 44
+[INFO]: new thread running in child: 108e03
+[INFO]: thread state updated in target: 108e03
+[INFO]: remote function call return value: 11
+[INFO] /usr/libexec/seld - pid: 46
+[INFO]: new thread running in child: 108f03
+[INFO]: thread state updated in target: 108f03
+[INFO]: remote function call return value: 58
+[INFO] /System/Library/PrivateFrameworks/MobileSoftwareUpdate.framework/Support/softwareupdated - pid: 45
+[INFO]: new thread running in child: 109003
+[INFO]: thread state updated in target: 109003
+[INFO]: remote function call return value: 42
+[INFO] /System/Library/Frameworks/AssetsLibrary.framework/Support/assetsd - pid: 49
+[INFO]: new thread running in child: 109103
+[INFO]: thread state updated in target: 109103
+[INFO]: remote function call return value: 4b
+[INFO] /System/Library/PrivateFrameworks/TouchRemote.framework/Support/touchsetupd - pid: 50
+[INFO]: new thread running in child: 109203
+[INFO]: thread state updated in target: 109203
+[INFO]: remote function call return value: 2d
+[INFO] /System/Library/CoreServices/AppleIDAuthAgent - pid: 51
+[INFO]: new thread running in child: 109303
+[INFO]: thread state updated in target: 109303
+[INFO]: remote function call return value: 48
+[INFO] /System/Library/PrivateFrameworks/AskPermission.framework/askpermissiond - pid: 54
+[INFO]: new thread running in child: 109403
+[INFO]: thread state updated in target: 109403
+[INFO]: remote function call return value: 10
+[INFO] /usr/libexec/wcd - pid: 52
+[INFO]: new thread running in child: 109503
+[INFO]: thread state updated in target: 109503
+[INFO]: remote function call return value: 17
+[INFO] /usr/sbin/wirelessproxd - pid: 55
+[INFO]: new thread running in child: 109603
+[INFO]: thread state updated in target: 109603
+[INFO]: remote function call return value: 17
+[INFO] /usr/libexec/assertiond - pid: 63
+[INFO]: new thread running in child: 109703
+[INFO]: thread state updated in target: 109703
+[INFO]: remote function call return value: 12
+[INFO] /usr/libexec/tipsd - pid: 65
+[INFO]: new thread running in child: 109803
+[INFO]: thread state updated in target: 109803
+[INFO]: remote function call return value: 48
+[INFO] /System/Library/PrivateFrameworks/AssistantServices.framework/assistantd - pid: 24
+[INFO]: new thread running in child: 109903
+[INFO]: thread state updated in target: 109903
+[INFO]: remote function call return value: 15
+[INFO] /usr/libexec/sharingd - pid: 57
+[INFO]: new thread running in child: 109a03
+[INFO]: thread state updated in target: 109a03
+[INFO]: remote function call return value: 12
+[INFO] /usr/sbin/cfprefsd - pid: 76
+[INFO]: new thread running in child: 109b03
+[INFO]: thread state updated in target: 109b03
+[INFO]: remote function call return value: 14
+[INFO] /usr/libexec/lockbot - pid: 77
+[INFO]: new thread running in child: 109c03
+[INFO]: thread state updated in target: 109c03
+[INFO]: remote function call return value: 10
+[INFO] /usr/libexec/lsd - pid: 79
+[INFO]: new thread running in child: 109d03
+[INFO]: thread state updated in target: 109d03
+[INFO]: remote function call return value: 13
+[INFO] /usr/sbin/distnoted - pid: 78
+[INFO]: new thread running in child: 109e03
+[INFO]: thread state updated in target: 109e03
+[INFO]: remote function call return value: 4c
+[INFO] /System/Library/PrivateFrameworks/WirelessDiagnostics.framework/Support/awdd - pid: 80
+[INFO]: new thread running in child: 109f03
+[INFO]: thread state updated in target: 109f03
+[INFO]: remote function call return value: 19
+[INFO] /usr/libexec/mobileassetd - pid: 81
+[INFO]: new thread running in child: 10a003
+[INFO]: thread state updated in target: 10a003
+[INFO]: remote function call return value: 1a
+[INFO] /usr/libexec/nanoregistryd - pid: 82
+[INFO]: new thread running in child: 10a103
+[INFO]: thread state updated in target: 10a103
+[INFO]: remote function call return value: 20
+[INFO] /usr/libexec/MobileGestaltHelper - pid: 83
+[INFO]: new thread running in child: 10a203
+[INFO]: thread state updated in target: 10a203
+[INFO]: remote function call return value: 41
+[INFO] /System/Library/PrivateFrameworks/ApplePushService.framework/apsd - pid: 84
+[INFO]: new thread running in child: 10a303
+[INFO]: thread state updated in target: 10a303
+[INFO]: remote function call return value: 1e
+[INFO] /usr/libexec/mobileactivationd - pid: 85
+[INFO]: new thread running in child: 10a403
+[INFO]: thread state updated in target: 10a403
+[INFO]: remote function call return value: 10
+[INFO] /usr/libexec/pfd - pid: 87
+[INFO]: new thread running in child: 10a503
+[INFO]: thread state updated in target: 10a503
+[INFO]: remote function call return value: 15
+[INFO] /usr/libexec/nehelper - pid: 89
+[INFO]: new thread running in child: 10a603
+[INFO]: thread state updated in target: 10a603
+[INFO]: remote function call return value: 17
+[INFO] /usr/sbin/mDNSResponder - pid: 90
+[INFO]: new thread running in child: 10a703
+[INFO]: thread state updated in target: 10a703
+[INFO]: remote function call return value: 14
+[INFO] /usr/sbin/aslmanager - pid: 91
+[INFO]: new thread running in child: 10a803
+[INFO]: thread state updated in target: 10a803
+[INFO]: remote function call return value: 1d
+[INFO] /usr/sbin/mDNSResponderHelper - pid: 92
+[INFO]: new thread running in child: 10a903
+[INFO]: thread state updated in target: 10a903
+[INFO]: remote function call return value: 20
+[INFO] /usr/libexec/nanoregistrylaunchd - pid: 93
+[INFO]: new thread running in child: 10aa03
+[INFO]: thread state updated in target: 10aa03
+[INFO]: remote function call return value: 37
+[INFO] /System/Library/Frameworks/Accounts.framework/accountsd - pid: 95
+[INFO]: new thread running in child: 10ab03
+[INFO]: thread state updated in target: 10ab03
+[INFO]: remote function call return value: 60
+[INFO] /System/Library/Frameworks/Metal.framework/XPCServices/MTLCompilerService.xpc/MTLCompilerService - pid: 96
+[INFO]: new thread running in child: 10ac03
+[INFO]: thread state updated in target: 10ac03
+[INFO]: remote function call return value: 4c
+[INFO] /System/Library/PrivateFrameworks/iTunesStore.framework/Support/itunesstored - pid: 98
+[INFO]: new thread running in child: 10ad03
+[INFO]: thread state updated in target: 10ad03
+[INFO]: remote function call return value: 60
+[INFO] /System/Library/Frameworks/Metal.framework/XPCServices/MTLCompilerService.xpc/MTLCompilerService - pid: 97
+[INFO]: new thread running in child: 10ae03
+[INFO]: thread state updated in target: 10ae03
+[INFO]: remote function call return value: 3c
+[INFO] /System/Library/PrivateFrameworks/GeoServices.framework/geod - pid: 99
+[INFO]: new thread running in child: 10af03
+[INFO]: thread state updated in target: 10af03
+[INFO]: remote function call return value: 1a
+[INFO] /usr/libexec/nsurlstoraged - pid: 100
+[INFO]: new thread running in child: 10b003
+[INFO]: thread state updated in target: 10b003
+[INFO]: remote function call return value: 16
+[INFO] /usr/libexec/securityd - pid: 101
+[INFO]: new thread running in child: 10b103
+[INFO]: thread state updated in target: 10b103
+[INFO]: remote function call return value: 21
+[INFO] /usr/libexec/MobileStorageMounter - pid: 102
+[INFO]: new thread running in child: 10b203
+[INFO]: thread state updated in target: 10b203
+[INFO]: remote function call return value: 4e
+[INFO] /System/Library/PrivateFrameworks/MusicLibrary.framework/Support/medialibraryd - pid: 103
+[INFO]: new thread running in child: 10b303
+[INFO]: thread state updated in target: 10b303
+[INFO]: remote function call return value: 34
+[INFO] /System/Library/PrivateFrameworks/TCC.framework/tccd - pid: 104
+[INFO]: new thread running in child: 10b403
+[INFO]: thread state updated in target: 10b403
+[INFO]: remote function call return value: 1f
+[INFO] /usr/sbin/WirelessRadioManagerd - pid: 105
+[INFO]: new thread running in child: 10b503
+[INFO]: thread state updated in target: 10b503
+[INFO]: remote function call return value: 12
+[INFO] /usr/sbin/BlueTool - pid: 106
+[INFO]: new thread running in child: 10b603
+[INFO]: thread state updated in target: 10b603
+[INFO]: remote function call return value: 16
+[INFO] /usr/libexec/symptomsd - pid: 107
+[INFO]: new thread running in child: 10b703
+[INFO]: thread state updated in target: 10b703
+[INFO]: remote function call return value: 4c
+[INFO] /System/Library/PrivateFrameworks/TelephonyUtilities.framework/callservicesd - pid: 108
+[INFO]: new thread running in child: 10b803
+[INFO]: thread state updated in target: 10b803
+[INFO]: remote function call return value: 49
+[INFO] /System/Library/PrivateFrameworks/CloudKitDaemon.framework/Support/cloudd - pid: 111
+[INFO]: new thread running in child: 10b903
+[INFO]: thread state updated in target: 10b903
+[INFO]: remote function call return value: 11
+[INFO] /usr/libexec/adid - pid: 112
+[INFO]: new thread running in child: 10ba03
+[INFO]: thread state updated in target: 10ba03
+[INFO]: remote function call return value: 41
+[INFO] /System/Library/Frameworks/SystemConfiguration.framework/SCHelper - pid: 113
+[INFO]: new thread running in child: 10bb03
+[INFO]: thread state updated in target: 10bb03
+[INFO]: remote function call return value: 42
+[INFO] /System/Library/PrivateFrameworks/CarKit.framework/Support/carkitd - pid: 114
+[INFO]: new thread running in child: 10bc03
+[INFO]: thread state updated in target: 10bc03
+[INFO]: remote function call return value: 11
+[INFO] /usr/libexec/nfcd - pid: 115
+[INFO]: new thread running in child: 10bd03
+[INFO]: thread state updated in target: 10bd03
+[INFO]: remote function call return value: 1a
+[INFO] /usr/libexec/nsurlsessiond - pid: 117
+[INFO]: new thread running in child: 10be03
+[INFO]: thread state updated in target: 10be03
+[INFO]: remote function call return value: 20
+[INFO] /usr/libexec/networkserviceproxy - pid: 118
+[INFO]: new thread running in child: 10bf03
+[INFO]: thread state updated in target: 10bf03
+[INFO]: remote function call return value: 1d
+[INFO] /usr/libexec/DuetHeuristic-BM - pid: 119
+[INFO]: new thread running in child: 10c003
+[INFO]: thread state updated in target: 10c003
+[INFO]: remote function call return value: 1a
+[INFO] /usr/libexec/biometrickitd - pid: 121
+[INFO]: new thread running in child: 10c103
+[INFO]: thread state updated in target: 10c103
+[INFO]: remote function call return value: 60
+[INFO] /System/Library/Frameworks/Metal.framework/XPCServices/MTLCompilerService.xpc/MTLCompilerService - pid: 123
+[INFO]: new thread running in child: 10c203
+[INFO]: thread state updated in target: 10c203
+[INFO]: remote function call return value: 60
+[INFO] /System/Library/Frameworks/Metal.framework/XPCServices/MTLCompilerService.xpc/MTLCompilerService - pid: 124
+[INFO]: new thread running in child: 10c303
+[INFO]: thread state updated in target: 10c303
+[INFO]: remote function call return value: 14
+[INFO] /usr/sbin/BTLEServer - pid: 125
+[INFO]: new thread running in child: 10c403
+[INFO]: thread state updated in target: 10c403
+[INFO]: remote function call return value: 4b
+[INFO] /System/Library/PrivateFrameworks/WatchListKit.framework/Support/watchlistd - pid: 126
+[INFO]: new thread running in child: 10c503
+[INFO]: thread state updated in target: 10c503
+[INFO]: remote function call return value: 5a
+[INFO] /System/Library/PrivateFrameworks/StoreBookkeeperClient.framework/Support/storebookkeeperd - pid: 127
+[INFO]: new thread running in child: 10c603
+[INFO]: thread state updated in target: 10c603
+[INFO]: remote function call return value: 3f
+[INFO] /System/Library/PrivateFrameworks/VisualVoicemail.framework/vmd - pid: 128
+[INFO]: new thread running in child: 10c703
+[INFO]: thread state updated in target: 10c703
+[INFO]: remote function call return value: 1a
+[INFO] /usr/libexec/findmydeviced - pid: 129
+[INFO]: new thread running in child: 10c803
+[INFO]: thread state updated in target: 10c803
+[INFO]: remote function call return value: 1d
+[INFO] /System/Library/TextInput/kbd - pid: 131
+[INFO]: new thread running in child: 10c903
+[INFO]: thread state updated in target: 10c903
+[INFO]: remote function call return value: 28
+[INFO] /usr/libexec/SafariCloudHistoryPushAgent - pid: 132
+[INFO]: new thread running in child: 10ca03
+[INFO]: thread state updated in target: 10ca03
+[INFO]: remote function call return value: 51
+[INFO] /System/Library/PrivateFrameworks/CloudPhotoLibrary.framework/Support/cloudphotod - pid: 134
+[INFO]: new thread running in child: 10cb03
+[INFO]: thread state updated in target: 10cb03
+[INFO]: remote function call return value: 4a
+[INFO] /System/Library/PrivateFrameworks/DataAccess.framework/Support/dataaccessd - pid: 135
+[INFO]: new thread running in child: 10cc03
+[INFO]: thread state updated in target: 10cc03
+[INFO]: remote function call return value: 37
+[INFO] /System/Library/PrivateFrameworks/AuthKit.framework/akd - pid: 136
+[INFO]: new thread running in child: 10cd03
+[INFO]: thread state updated in target: 10cd03
+[INFO]: remote function call return value: 55
+[INFO] /System/Library/PrivateFrameworks/CallHistory.framework/Support/CallHistorySyncHelper - pid: 138
+[INFO]: new thread running in child: 10ce03
+[INFO]: thread state updated in target: 10ce03
+[INFO]: remote function call return value: 4d
+[INFO] /System/Library/PrivateFrameworks/CalendarDaemon.framework/Support/calaccessd - pid: 122
+[INFO]: new thread running in child: 10cf03
+[INFO]: thread state updated in target: 10cf03
+[INFO]: remote function call return value: 41
+[INFO] /System/Library/PrivateFrameworks/MapsSupport.framework/mapspushd - pid: 130
+[INFO]: new thread running in child: 10d003
+[INFO]: thread state updated in target: 10d003
+[INFO]: remote function call return value: 1d
+[INFO] /usr/libexec/limitadtrackingd - pid: 137
+[INFO]: new thread running in child: 10d103
+[INFO]: thread state updated in target: 10d103
+[INFO]: remote function call return value: 12
+[INFO] /usr/libexec/gamed - pid: 139
+[INFO]: new thread running in child: 10d203
+[INFO]: thread state updated in target: 10d203
+[INFO]: remote function call return value: 4c
+[INFO] /System/Library/PrivateFrameworks/HomeSharing.framework/Support/itunescloudd - pid: 140
+[INFO]: new thread running in child: 10d303
+[INFO]: thread state updated in target: 10d303
+[INFO]: remote function call return value: 47
+[INFO] /System/Library/PrivateFrameworks/HomeKitDaemon.framework/Support/homed - pid: 141
+[INFO]: new thread running in child: 10d403
+[INFO]: thread state updated in target: 10d403
+[INFO]: remote function call return value: 42
+[INFO] /System/Library/PrivateFrameworks/iCloudNotification.framework/ind - pid: 142
+[INFO]: new thread running in child: 10d503
+[INFO]: thread state updated in target: 10d503
+[INFO]: remote function call return value: 3d
+[INFO] /System/Library/PrivateFrameworks/PassKitCore.framework/passd - pid: 143
+[INFO]: new thread running in child: 10d603
+[INFO]: thread state updated in target: 10d603
+[INFO]: remote function call return value: 15
+[INFO] /usr/libexec/misagent - pid: 144
+[INFO]: new thread running in child: 10d703
+[INFO]: thread state updated in target: 10d703
+[INFO]: remote function call return value: 11
+[INFO] /usr/libexec/fmfd - pid: 145
+[INFO]: new thread running in child: 10d803
+[INFO]: thread state updated in target: 10d803
+[INFO]: remote function call return value: 40
+[INFO] /System/Library/PrivateFrameworks/CloudDocsDaemon.framework/bird - pid: 146
+[INFO]: new thread running in child: 10d903
+[INFO]: thread state updated in target: 10d903
+[INFO]: remote function call return value: 18
+[INFO] /usr/libexec/fmflocatord - pid: 147
+[INFO]: new thread running in child: 10da03
+[INFO]: thread state updated in target: 10da03
+[INFO]: remote function call return value: 16
+[INFO] /usr/libexec/pipelined - pid: 148
+[INFO]: new thread running in child: 10db03
+[INFO]: thread state updated in target: 10db03
+[INFO]: remote function call return value: 60
+[INFO] /System/Library/Frameworks/Metal.framework/XPCServices/MTLCompilerService.xpc/MTLCompilerService - pid: 149
+[INFO]: new thread running in child: 10dc03
+[INFO]: thread state updated in target: 10dc03
+[INFO]: remote function call return value: 60
+[INFO] /System/Library/Frameworks/Metal.framework/XPCServices/MTLCompilerService.xpc/MTLCompilerService - pid: 150
+[INFO]: new thread running in child: 10dd03
+[INFO]: thread state updated in target: 10dd03
+[INFO]: remote function call return value: 10
+[INFO] /usr/libexec/pkd - pid: 151
+[INFO]: new thread running in child: 10de03
+[INFO]: thread state updated in target: 10de03
+[INFO]: remote function call return value: 18
+[INFO] /usr/libexec/duetexpertd - pid: 152
+[INFO]: new thread running in child: 10df03
+[INFO]: thread state updated in target: 10df03
+[INFO]: remote function call return value: 51
+[INFO] /System/Library/PrivateFrameworks/ManagedConfiguration.framework/Support/profiled - pid: 153
+[INFO]: new thread running in child: 10e003
+[INFO]: thread state updated in target: 10e003
+[INFO]: remote function call return value: 7b
+[INFO] /System/Library/PrivateFrameworks/Accessibility.framework/Frameworks/AXHearingSupport.framework/XPCServices/heard.xpc/heard - pid: 158
+[INFO]: new thread running in child: 10e103
+[INFO]: thread state updated in target: 10e103
+[INFO]: remote function call return value: 4d
+[INFO] /System/Library/PrivateFrameworks/UserActivity.framework/Agents/useractivityd - pid: 159
+[INFO]: new thread running in child: 10e203
+[INFO]: thread state updated in target: 10e203
+[INFO]: remote function call return value: 3c
+[INFO] /System/Library/PrivateFrameworks/MapsSupport.framework/navd - pid: 154
+[INFO]: new thread running in child: 10e303
+[INFO]: thread state updated in target: 10e303
+[INFO]: remote function call return value: 89
+[INFO] /System/Library/PrivateFrameworks/AssistantServices.framework/XPCServices/com.apple.siri.embeddedspeech.xpc/com.apple.siri.embeddedspeech - pid: 161
+[INFO]: new thread running in child: 10e403
+[INFO]: thread state updated in target: 10e403
+[INFO]: remote function call return value: 45
+[INFO] /System/Library/PrivateFrameworks/Pasteboard.framework/Support/pasted - pid: 163
+[INFO]: new thread running in child: 10e503
+[INFO]: thread state updated in target: 10e503
+[INFO]: remote function call return value: 1b
+[INFO] /usr/libexec/languageassetd - pid: 156
+[INFO]: new thread running in child: 10e603
+[INFO]: thread state updated in target: 10e603
+[INFO]: remote function call return value: 55
+[INFO] /System/Library/PrivateFrameworks/AppStoreDaemon.framework/appstored.bundle/appstored - pid: 155
+[INFO]: new thread running in child: 10e703
+[INFO]: thread state updated in target: 10e703
+[INFO]: remote function call return value: 42
+[INFO] /System/Library/PrivateFrameworks/CoreFollowUp.framework/followupd - pid: 160
+[INFO]: new thread running in child: 10e803
+[INFO]: thread state updated in target: 10e803
+[INFO]: remote function call return value: c2
+[INFO] /System/Library/PrivateFrameworks/MobileSoftwareUpdate.framework/XPCServices/com.apple.MobileSoftwareUpdate.CleanupPreparePathService.xpc/com.apple.MobileSoftwareUpdate.CleanupPreparePathService - pid: 165
+[INFO]: new thread running in child: 10e903
+[INFO]: thread state updated in target: 10e903
+[INFO]: remote function call return value: 1a
+[INFO] /usr/libexec/webbookmarksd - pid: 162
+[INFO]: new thread running in child: 10ea03
+[INFO]: thread state updated in target: 10ea03
+[INFO]: remote function call return value: a2
+[INFO] /System/Library/PrivateFrameworks/MobileInstallation.framework/XPCServices/com.apple.MobileInstallationHelperService.xpc/com.apple.MobileInstallationHelperService - pid: 166
+[INFO]: new thread running in child: 10eb03
+[INFO]: thread state updated in target: 10eb03
+[INFO]: remote function call return value: 3a
+[INFO] /System/Library/PrivateFrameworks/Search.framework/searchd - pid: 167
+[INFO]: new thread running in child: 10ec03
+[INFO]: thread state updated in target: 10ec03
+[INFO]: remote function call return value: 44
+[INFO] /System/Library/PrivateFrameworks/CoreSuggestions.framework/suggestd - pid: 168
+[INFO]: new thread running in child: 10ed03
+[INFO]: thread state updated in target: 10ed03
+[INFO]: remote function call return value: 6c
+[INFO] /System/Library/Frameworks/Security.framework/KeychainSyncingOverIDSProxy.bundle/KeychainSyncingOverIDSProxy - pid: 170
+[INFO]: new thread running in child: 10ee03
+[INFO]: thread state updated in target: 10ee03
+[INFO]: remote function call return value: 5a
+[INFO] /System/Library/Frameworks/Security.framework/CloudKeychainProxy.bundle/CloudKeychainProxy - pid: 171
+[INFO]: new thread running in child: 10ef03
+[INFO]: thread state updated in target: 10ef03
+[INFO]: remote function call return value: 52
+[INFO] /System/Library/PrivateFrameworks/AggregateDictionary.framework/Support/aggregated - pid: 173
+[INFO]: new thread running in child: 10f003
+[INFO]: thread state updated in target: 10f003
+[INFO]: remote function call return value: 27
+[INFO] /Applications/MobileMail.app/MobileMail - pid: 175
+[INFO]: new thread running in child: 10f103
+[INFO]: thread state updated in target: 10f103
+[INFO]: remote function call return value: 72
+[INFO] /System/Library/PrivateFrameworks/IMDPersistence.framework/XPCServices/IMDPersistenceAgent.xpc/IMDPersistenceAgent - pid: 174
+[INFO]: new thread running in child: 10f203
+[INFO]: thread state updated in target: 10f203
+[INFO]: remote function call return value: 92
+[INFO] /System/Library/PrivateFrameworks/UIFoundation.framework/XPCServices/com.apple.uifoundation-bundle-helper.xpc/com.apple.uifoundation-bundle-helper - pid: 176
+[INFO]: new thread running in child: 10f303
+[INFO]: thread state updated in target: 10f303
+[INFO]: remote function call return value: e
+[INFO] /usr/sbin/absd - pid: 177
+[INFO]: new thread running in child: 10f403
+[INFO]: thread state updated in target: 10f403
+[INFO]: remote function call return value: 3e
+[INFO] /System/Library/PrivateFrameworks/CoreParsec.framework/parsecd - pid: 178
+[INFO]: new thread running in child: 10f503
+[INFO]: thread state updated in target: 10f503
+[INFO]: remote function call return value: 4f
+[INFO] /System/Library/PrivateFrameworks/AssistantServices.framework/assistant_service - pid: 180
+[INFO]: new thread running in child: 10f603
+[INFO]: thread state updated in target: 10f603
+[INFO]: remote function call return value: 19
+[INFO] /usr/libexec/captiveagent - pid: 181
+[INFO]: new thread running in child: 10f703
+[INFO]: thread state updated in target: 10f703
+[INFO]: remote function call return value: 1b
+[INFO] /usr/sbin/filecoordinationd - pid: 183
+[INFO]: new thread running in child: 10f803
+[INFO]: thread state updated in target: 10f803
+[INFO]: remote function call return value: 4a
+[INFO] /System/Library/PrivateFrameworks/NewsServices.framework/newswidgetpolicyd - pid: 184
+[INFO]: new thread running in child: 10f903
+[INFO]: thread state updated in target: 10f903
+[INFO]: remote function call return value: 19
+[INFO] /usr/libexec/splashboardd - pid: 185
+[INFO]: new thread running in child: 10fa03
+[INFO]: thread state updated in target: 10fa03
+[INFO]: remote function call return value: 20
+[INFO] /usr/libexec/videosubscriptionsd - pid: 187
+[INFO]: new thread running in child: 10fb03
+[INFO]: thread state updated in target: 10fb03
+[INFO]: remote function call return value: 11
+[INFO] /usr/libexec/swcd - pid: 189
+[INFO]: new thread running in child: 10fc03
+[INFO]: thread state updated in target: 10fc03
+[INFO]: remote function call return value: 1e
+[INFO] /usr/libexec/online-auth-agent - pid: 188
+[INFO]: new thread running in child: 10fd03
+[INFO]: thread state updated in target: 10fd03
+[INFO]: remote function call return value: 1a
+[INFO] /usr/libexec/mmaintenanced - pid: 182
+[INFO]: new thread running in child: 10fe03
+[INFO]: thread state updated in target: 10fe03
+[INFO]: remote function call return value: 48
+[INFO] /System/Library/CoreServices/EscrowSecurityAlert.app/EscrowSecurityAlert - pid: 179
+[INFO]: new thread running in child: 10ff03
+[INFO]: thread state updated in target: 10ff03
+[INFO]: remote function call return value: 3f
+[INFO] /System/Library/PrivateFrameworks/CacheDelete.framework/deleted - pid: 191
+[INFO]: new thread running in child: 110003
+[INFO]: thread state updated in target: 110003
+[INFO]: remote function call return value: 50
+[INFO] /System/Library/PrivateFrameworks/CoreSymbolication.framework/coresymbolicationd - pid: 195
+[INFO]: new thread running in child: 110103
+[INFO]: thread state updated in target: 110103
+[INFO]: remote function call return value: 14
+[INFO] /usr/bin/sysdiagnose - pid: 196
+[INFO]: new thread running in child: 110203
+[INFO]: thread state updated in target: 110203
+[INFO]: remote function call return value: 57
+[INFO] /System/Library/PrivateFrameworks/MobileBackup.framework/MobileBackupCacheDeleteService - pid: 194
+[INFO]: new thread running in child: 110303
+[INFO]: thread state updated in target: 110303
+[INFO]: remote function call return value: 6d
+[INFO] /System/Library/PrivateFrameworks/QuickLookThumbnailing.framework/Support/com.apple.quicklook.ThumbnailsAgent - pid: 197
+[INFO]: new thread running in child: 110403
+[INFO]: thread state updated in target: 110403
+[INFO]: remote function call return value: 14
+[INFO] /usr/libexec/replayd - pid: 192
+[INFO]: new thread running in child: 110503
+[INFO]: thread state updated in target: 110503
+[INFO]: remote function call return value: 49
+[INFO] /System/Library/PrivateFrameworks/GenerationalStorage.framework/revisiond - pid: 193
+[INFO]: new thread running in child: 110603
+[INFO]: thread state updated in target: 110603
+[INFO]: remote function call return value: 33
+[INFO] /System/Library/CoreServices/CacheDeleteITunesStore - pid: 199
+[INFO]: new thread running in child: 110703
+[INFO]: thread state updated in target: 110703
+[INFO]: remote function call return value: 81
+[INFO] /System/Library/PrivateFrameworks/CloudDocsDaemon.framework/XPCServices/ContainerMetadataExtractor.xpc/ContainerMetadataExtractor - pid: 201
+[INFO]: new thread running in child: 110803
+[INFO]: thread state updated in target: 110803
+[INFO]: remote function call return value: 3a
+[INFO] /System/Library/CoreServices/CacheDeleteAppContainerCaches - pid: 200
+[INFO]: new thread running in child: 110903
+[INFO]: thread state updated in target: 110903
+[INFO]: remote function call return value: 12
+[INFO] /usr/libexec/amfid - pid: 203
+[INFO]: new thread running in child: 110a03
+[INFO]: thread state updated in target: 110a03
+[INFO]: remote function call return value: 5e
+[INFO] /System/Library/PrivateFrameworks/CommunicationsFilter.framework/CMFSyncAgent.app/CMFSyncAgent - pid: 208
+[INFO]: new thread running in child: 110b03
+[INFO]: thread state updated in target: 110b03
+[INFO]: remote function call return value: 94
+[INFO] /private/var/containers/Bundle/Application/BE798053-C5E6-49B7-A0F7-CC4E686D8255/OneDrive.app/PlugIns/onedrivefileprovider.appex/onedrivefileprovider - pid: 210
+[INFO]: new thread running in child: 110c03
+[INFO]: thread state updated in target: 110c03
+[INFO]: remote function call return value: ca
+[INFO] /System/Library/PrivateFrameworks/Accessibility.framework/Frameworks/AccessibilityUI.framework/XPCServices/com.apple.accessibility.AccessibilityUIServer.xpc/com.apple.accessibility.AccessibilityUIServer - pid: 211
+[INFO]: new thread running in child: 110d03
+[INFO]: thread state updated in target: 110d03
+[INFO]: remote function call return value: 92
+[INFO] /System/Library/Frameworks/CallKit.framework/XPCServices/com.apple.CallKit.CallDirectoryMaintenance.xpc/com.apple.CallKit.CallDirectoryMaintenance - pid: 212
+[INFO]: new thread running in child: 110e03
+[INFO]: thread state updated in target: 110e03
+[INFO]: remote function call return value: 55
+[INFO] /Applications/ServerDocuments.app/PlugIns/ServerFileProvider.appex/ServerFileProvider - pid: 213
+[INFO]: new thread running in child: 110f03
+[INFO]: thread state updated in target: 110f03
+[INFO]: remote function call return value: 92
+[INFO] /System/Library/PrivateFrameworks/DictionaryServices.framework/XPCServices/com.apple.DictionaryServiceHelper.xpc/com.apple.DictionaryServiceHelper - pid: 214
+[INFO]: new thread running in child: 111003
+[INFO]: thread state updated in target: 111003
+[INFO]: remote function call return value: 80
+[INFO] /System/Library/PrivateFrameworks/AssetCacheServices.framework/XPCServices/AssetCacheLocatorService.xpc/AssetCacheLocatorService - pid: 215
+[INFO]: new thread running in child: 111103
+[INFO]: thread state updated in target: 111103
+[INFO]: remote function call return value: 63
+[INFO] /private/var/containers/Bundle/Application/6ECF8944-BFFB-4008-8087-8DA1A2988288/YouMail.app/YouMail - pid: 217
+[INFO]: new thread running in child: 111203
+[INFO]: thread state updated in target: 111203
+[INFO]: remote function call return value: 5d
+[INFO] /private/var/containers/Bundle/Application/02C9EA2C-AD39-4203-92DA-3AF3CA11898B/Wear.app/Wear - pid: 218
+[INFO]: new thread running in child: 111303
+[INFO]: thread state updated in target: 111303
+[INFO]: remote function call return value: 6b
+[INFO] /private/var/containers/Bundle/Application/473410D2-29BA-4380-B6B8-C33686D4A8B5/appalachian.app/appalachian - pid: 219
+[INFO]: new thread running in child: 111403
+[INFO]: thread state updated in target: 111403
+[INFO]: remote function call return value: 65
+[INFO] /private/var/containers/Bundle/Application/6EC55DFB-F034-4DC1-B12A-A8AE6B8CD4EB/Facebook.app/Facebook - pid: 220
+[INFO]: new thread running in child: 111503
+[INFO]: thread state updated in target: 111503
+[INFO]: remote function call return value: 35
+[INFO] /Applications/StoreKitUIService.app/StoreKitUIService - pid: 230
+[INFO]: new thread running in child: 111603
+[INFO]: thread state updated in target: 111603
+[INFO]: remote function call return value: 29
+[INFO] /Applications/MobileNotes.app/MobileNotes - pid: 235
+[INFO]: new thread running in child: 111703
+[INFO]: thread state updated in target: 111703
+[INFO]: remote function call return value: 63
+[INFO] /private/var/containers/Bundle/Application/CEEABA17-75EB-41BC-9E24-52AC7596B374/MyRadar.app/MyRadar - pid: 236
+[INFO]: new thread running in child: 111803
+[INFO]: thread state updated in target: 111803
+[INFO]: remote function call return value: 1c
+[INFO] /usr/libexec/gamecontrollerd - pid: 237
+[INFO]: new thread running in child: 111903
+[INFO]: thread state updated in target: 111903
+[INFO]: remote function call return value: 60
+[INFO] /System/Library/Frameworks/Metal.framework/XPCServices/MTLCompilerService.xpc/MTLCompilerService - pid: 238
+[INFO]: new thread running in child: 111a03
+[INFO]: thread state updated in target: 111a03
+[INFO]: remote function call return value: 75
+[INFO] /System/Library/PrivateFrameworks/AppPredictionWidget.framework/PlugIns/AppPredictionWidget.appex/AppPredictionWidget - pid: 241
+[INFO]: new thread running in child: 111b03
+[INFO]: thread state updated in target: 111b03
+[INFO]: remote function call return value: 54
+[INFO] /System/Library/PrivateFrameworks/UpNextWidget.framework/PlugIns/UpNext.appex/UpNext - pid: 242
+[INFO]: new thread running in child: 111c03
+[INFO]: thread state updated in target: 111c03
+[INFO]: remote function call return value: 38
+[INFO] /Applications/News.app/PlugIns/NewsToday.appex/NewsToday - pid: 243
+[INFO]: new thread running in child: 111d03
+[INFO]: thread state updated in target: 111d03
+[INFO]: remote function call return value: 60
+[INFO] /System/Library/Frameworks/Metal.framework/XPCServices/MTLCompilerService.xpc/MTLCompilerService - pid: 244
+[INFO]: new thread running in child: 111e03
+[INFO]: thread state updated in target: 111e03
+[INFO]: remote function call return value: 60
+[INFO] /System/Library/Frameworks/Metal.framework/XPCServices/MTLCompilerService.xpc/MTLCompilerService - pid: 245
+[INFO]: new thread running in child: 111f03
+[INFO]: thread state updated in target: 111f03
+[INFO]: remote function call return value: 60
+[INFO] /System/Library/Frameworks/Metal.framework/XPCServices/MTLCompilerService.xpc/MTLCompilerService - pid: 246
+[INFO]: new thread running in child: 112003
+[INFO]: thread state updated in target: 112003
+[INFO]: remote function call return value: 60
+[INFO] /System/Library/Frameworks/Metal.framework/XPCServices/MTLCompilerService.xpc/MTLCompilerService - pid: 247
+[INFO]: new thread running in child: 112103
+[INFO]: thread state updated in target: 112103
+[INFO]: remote function call return value: 9d
+[INFO] /System/Library/PrivateFrameworks/DistributedEvaluation.framework/XPCServices/com.apple.siri-distributed-evaluation.xpc/com.apple.siri-distributed-evaluation - pid: 248
+[INFO]: new thread running in child: 112203
+[INFO]: thread state updated in target: 112203
+[INFO]: remote function call return value: 60
+[INFO] /System/Library/Frameworks/Metal.framework/XPCServices/MTLCompilerService.xpc/MTLCompilerService - pid: 252
+[INFO]: new thread running in child: 112303
+[INFO]: thread state updated in target: 112303
+[INFO]: remote function call return value: 60
+[INFO] /System/Library/Frameworks/Metal.framework/XPCServices/MTLCompilerService.xpc/MTLCompilerService - pid: 253
+[INFO]: new thread running in child: 112403
+[INFO]: thread state updated in target: 112403
+[INFO]: remote function call return value: 67
+[INFO] /private/var/containers/Bundle/Application/5E52193B-335F-43AE-8559-AB9764F4FC60/Messenger.app/Messenger - pid: 254
+[INFO]: new thread running in child: 112503
+[INFO]: thread state updated in target: 112503
+[INFO]: remote function call return value: 73
+[INFO] /System/Library/Frameworks/WebKit.framework/XPCServices/com.apple.WebKit.Networking.xpc/com.apple.WebKit.Networking - pid: 263
+[INFO]: new thread running in child: 112603
+[INFO]: thread state updated in target: 112603
+[INFO]: remote function call return value: 73
+[INFO] /System/Library/Frameworks/WebKit.framework/XPCServices/com.apple.WebKit.WebContent.xpc/com.apple.WebKit.WebContent - pid: 265
+[INFO]: new thread running in child: 112703
+[INFO]: thread state updated in target: 112703
+[INFO]: remote function call return value: 60
+[INFO] /System/Library/Frameworks/Metal.framework/XPCServices/MTLCompilerService.xpc/MTLCompilerService - pid: 266
+[INFO]: new thread running in child: 112803
+[INFO]: thread state updated in target: 112803
+[INFO]: remote function call return value: 60
+[INFO] /System/Library/Frameworks/Metal.framework/XPCServices/MTLCompilerService.xpc/MTLCompilerService - pid: 267
+[INFO]: new thread running in child: 112903
+[INFO]: thread state updated in target: 112903
+[INFO]: remote function call return value: 64
+[INFO] /System/Library/PrivateFrameworks/SafariSafeBrowsing.framework/com.apple.Safari.SafeBrowsing.Service - pid: 271
+[INFO]: new thread running in child: 112a03
+[INFO]: thread state updated in target: 112a03
+[INFO]: remote function call return value: 69
+[INFO] /private/var/containers/Bundle/Application/F9FBD1F7-3149-470D-A88A-8FED9BBE899F/evilapples.app/evilapples - pid: 275
+[INFO]: new thread running in child: 112b03
+[INFO]: thread state updated in target: 112b03
+[INFO]: remote function call return value: 18
+[INFO] /usr/libexec/crash_mover - pid: 282
+[INFO]: new thread running in child: 112c03
+[INFO]: thread state updated in target: 112c03
+[INFO]: remote function call return value: 29
+[INFO] /Applications/Preferences.app/Preferences - pid: 286
+[INFO]: new thread running in child: 112d03
+[INFO]: thread state updated in target: 112d03
+[INFO]: remote function call return value: af
+[INFO] /System/Library/Frameworks/VideoSubscriberAccount.framework/XPCServices/com.apple.VideoSubscriberAccount.DeveloperService.xpc/com.apple.VideoSubscriberAccount.DeveloperService - pid: 287
+[INFO]: new thread running in child: 112e03
+[INFO]: thread state updated in target: 112e03
+[INFO]: remote function call return value: 60
+[INFO] /System/Library/Frameworks/Metal.framework/XPCServices/MTLCompilerService.xpc/MTLCompilerService - pid: 288
+[INFO]: new thread running in child: 112f03
+[INFO]: thread state updated in target: 112f03
+[INFO]: remote function call return value: 60
+[INFO] /System/Library/Frameworks/Metal.framework/XPCServices/MTLCompilerService.xpc/MTLCompilerService - pid: 289
+[INFO]: new thread running in child: 113003
+[INFO]: thread state updated in target: 113003
+[INFO]: remote function call return value: 31
+[INFO] /Applications/SiriViewService.app/SiriViewService - pid: 294
+[INFO]: new thread running in child: 113103
+[INFO]: thread state updated in target: 113103
+[INFO]: remote function call return value: 7a
+[INFO] /System/Library/PrivateFrameworks/SafariShared.framework/XPCServices/com.apple.Safari.History.xpc/com.apple.Safari.History - pid: 297
+[INFO]: new thread running in child: 113203
+[INFO]: thread state updated in target: 113203
+[INFO]: remote function call return value: 2d
+[INFO] /Applications/InCallService.app/InCallService - pid: 302
+[INFO]: new thread running in child: 113303
+[INFO]: thread state updated in target: 113303
+[INFO]: remote function call return value: 7c
+[INFO] /System/Library/Frameworks/CallKit.framework/XPCServices/com.apple.CallKit.CallDirectory.xpc/com.apple.CallKit.CallDirectory - pid: 303
+[INFO]: new thread running in child: 113403
+[INFO]: thread state updated in target: 113403
+[INFO]: remote function call return value: 7c
+[INFO] /System/Library/Frameworks/CallKit.framework/XPCServices/com.apple.CallKit.CallDirectory.xpc/com.apple.CallKit.CallDirectory - pid: 304
+[INFO]: new thread running in child: 113503
+[INFO]: thread state updated in target: 113503
+[INFO]: remote function call return value: 1a
+[INFO] /usr/libexec/rtcreportingd - pid: 309
+[INFO]: new thread running in child: 113603
+[INFO]: thread state updated in target: 113603
+[INFO]: remote function call return value: 28
+[INFO] /System/Library/CoreServices/ReportCrash - pid: 318
+[INFO]: new thread running in child: 113703
+[INFO]: thread state updated in target: 113703
+[INFO]: remote function call return value: 9f
+[INFO] /System/Library/PrivateFrameworks/AssistantServices.framework/XPCServices/com.apple.siri.ClientFlow.ClientScripter.xpc/com.apple.siri.ClientFlow.ClientScripter - pid: 319
+[INFO]: new thread running in child: 113803
+[INFO]: thread state updated in target: 113803
+[INFO]: remote function call return value: 12
+[INFO] /usr/sbin/spindump - pid: 327
+[INFO]: new thread running in child: 113903
+[INFO]: thread state updated in target: 113903
+[INFO]: remote function call return value: 9d
+[INFO] /private/var/containers/Bundle/Application/42D797FB-241A-4CEB-B8B5-EA3698A64AFA/IFTTT.app/PlugIns/IFTTT Notification Service.appex/IFTTT Notification Service - pid: 337
+[INFO]: new thread running in child: 113a03
+[INFO]: thread state updated in target: 113a03
+[INFO]: remote function call return value: 60
+[INFO] /System/Library/Frameworks/Metal.framework/XPCServices/MTLCompilerService.xpc/MTLCompilerService - pid: 342
+[INFO]: new thread running in child: 113b03
+[INFO]: thread state updated in target: 113b03
+[INFO]: remote function call return value: 60
+[INFO] /System/Library/Frameworks/Metal.framework/XPCServices/MTLCompilerService.xpc/MTLCompilerService - pid: 341
+[INFO]: new thread running in child: 113c03
+[INFO]: thread state updated in target: 113c03
+[INFO]: remote function call return value: 40
+[INFO] /System/Library/PrivateFrameworks/CoreRecents.framework/recentsd - pid: 346
+[INFO]: new thread running in child: 113d03
+[INFO]: thread state updated in target: 113d03
+[INFO]: remote function call return value: 39
+[INFO] /Applications/MessagesViewService.app/MessagesViewService - pid: 348
+[INFO]: new thread running in child: 113e03
+[INFO]: thread state updated in target: 113e03
+[INFO]: remote function call return value: 6c
+[INFO] /Applications/News.app/PlugIns/ArticleNotificationServiceExtension.appex/ArticleNotificationServiceExtension - pid: 351
+[INFO]: new thread running in child: 113f03
+[INFO]: thread state updated in target: 113f03
+[INFO]: remote function call return value: 1b
+[INFO] /Applications/Maps.app/Maps - pid: 371
+[INFO]: new thread running in child: 114003
+[INFO]: thread state updated in target: 114003
+[INFO]: remote function call return value: 60
+[INFO] /System/Library/Frameworks/Metal.framework/XPCServices/MTLCompilerService.xpc/MTLCompilerService - pid: 372
+[INFO]: new thread running in child: 114103
+[INFO]: thread state updated in target: 114103
+[INFO]: remote function call return value: 60
+[INFO] /System/Library/Frameworks/Metal.framework/XPCServices/MTLCompilerService.xpc/MTLCompilerService - pid: 373
+[INFO]: new thread running in child: 114203
+[INFO]: thread state updated in target: 114203
+[INFO]: remote function call return value: 9f
+[INFO] /System/Library/Frameworks/MediaAccessibility.framework/XPCServices/com.apple.accessibility.mediaaccessibilityd.xpc/com.apple.accessibility.mediaaccessibilityd - pid: 377
+[INFO]: new thread running in child: 114303
+[INFO]: thread state updated in target: 114303
+[INFO]: remote function call return value: 29
+[INFO] /Applications/MobilePhone.app/MobilePhone - pid: 379
+[INFO]: new thread running in child: 114403
+[INFO]: thread state updated in target: 114403
+[INFO]: remote function call return value: 7c
+[INFO] /System/Library/Frameworks/CallKit.framework/XPCServices/com.apple.CallKit.CallDirectory.xpc/com.apple.CallKit.CallDirectory - pid: 380
+[INFO]: new thread running in child: 114503
+[INFO]: thread state updated in target: 114503
+[INFO]: remote function call return value: 5f
+[INFO] /private/var/containers/Bundle/Application/42D797FB-241A-4CEB-B8B5-EA3698A64AFA/IFTTT.app/IFTTT - pid: 395
+[INFO]: new thread running in child: 114603
+[INFO]: thread state updated in target: 114603
+[INFO]: remote function call return value: a3
+[INFO] /private/var/containers/Bundle/Application/786DAD7B-28BC-49F4-9D56-2F0A726D231C/YouTube.app/PlugIns/NotificationServiceExtension.appex/NotificationServiceExtension - pid: 396
+[INFO]: new thread running in child: 114703
+[INFO]: thread state updated in target: 114703
+[INFO]: remote function call return value: 23
+[INFO] /Applications/Passbook.app/Passbook - pid: 403
+[INFO]: new thread running in child: 114803
+[INFO]: thread state updated in target: 114803
+[INFO]: remote function call return value: 67
+[INFO] /private/var/containers/Bundle/Application/29A6365C-B7A6-43DE-A280-73B044583F86/Starbucks.app/Starbucks - pid: 415
+[INFO]: new thread running in child: 114903
+[INFO]: thread state updated in target: 114903
+[INFO]: remote function call return value: 31
+[INFO] /Applications/MobileSlideShow.app/MobileSlideShow - pid: 420
+[INFO]: new thread running in child: 114a03
+[INFO]: thread state updated in target: 114a03
+[INFO]: remote function call return value: b1
+[INFO] /private/var/containers/Bundle/Application/EBC92042-1D9C-42FD-858C-2373D24B067A/Twitter.app/PlugIns/TwitterNotificationServiceExtension.appex/TwitterNotificationServiceExtension - pid: 422
+[INFO]: new thread running in child: 114b03
+[INFO]: thread state updated in target: 114b03
+[INFO]: remote function call return value: 63
+[INFO] /private/var/containers/Bundle/Application/786DAD7B-28BC-49F4-9D56-2F0A726D231C/YouTube.app/YouTube - pid: 436
+[INFO]: new thread running in child: 114c03
+[INFO]: thread state updated in target: 114c03
+[INFO]: remote function call return value: 50
+[INFO] /System/Library/PrivateFrameworks/PhotoAnalysis.framework/Support/photoanalysisd - pid: 441
+[INFO]: new thread running in child: 114d03
+[INFO]: thread state updated in target: 114d03
+[INFO]: remote function call return value: 60
+[INFO] /System/Library/Frameworks/Metal.framework/XPCServices/MTLCompilerService.xpc/MTLCompilerService - pid: 443
+[INFO]: new thread running in child: 114e03
+[INFO]: thread state updated in target: 114e03
+[INFO]: remote function call return value: 60
+[INFO] /System/Library/Frameworks/Metal.framework/XPCServices/MTLCompilerService.xpc/MTLCompilerService - pid: 444
+[INFO]: new thread running in child: 114f03
+[INFO]: thread state updated in target: 114f03
+[INFO]: remote function call return value: 56
+[INFO] /System/Library/PrivateFrameworks/NanoTimeKitCompanion.framework/nanotimekitcompaniond - pid: 446
+[INFO]: new thread running in child: 115003
+[INFO]: thread state updated in target: 115003
+[INFO]: remote function call return value: 16
+[INFO] /usr/libexec/dprivacyd - pid: 453
+[INFO]: new thread running in child: 115103
+[INFO]: thread state updated in target: 115103
+[INFO]: remote function call return value: 65
+[INFO] /System/Library/PrivateFrameworks/CloudServices.framework/XPCServices/com.apple.sbd.xpc/com.apple.sbd - pid: 456
+[INFO]: new thread running in child: 115203
+[INFO]: thread state updated in target: 115203
+[INFO]: remote function call return value: 16
+[INFO] /usr/libexec/coreduetd - pid: 459
+[INFO]: new thread running in child: 115303
+[INFO]: thread state updated in target: 115303
+[INFO]: remote function call return value: 53
+[INFO] /Applications/Weather.app/PlugIns/WeatherAppTodayWidget.appex/WeatherAppTodayWidget - pid: 473
+[INFO]: new thread running in child: 115403
+[INFO]: thread state updated in target: 115403
+[INFO]: remote function call return value: 60
+[INFO] /System/Library/Frameworks/Metal.framework/XPCServices/MTLCompilerService.xpc/MTLCompilerService - pid: 474
+[INFO]: new thread running in child: 115503
+[INFO]: thread state updated in target: 115503
+[INFO]: remote function call return value: 60
+[INFO] /System/Library/Frameworks/Metal.framework/XPCServices/MTLCompilerService.xpc/MTLCompilerService - pid: 475
+[INFO]: new thread running in child: 115603
+[INFO]: thread state updated in target: 115603
+[INFO]: remote function call return value: 2d
+[INFO] /System/Library/CoreServices/CacheDeleteDaily - pid: 476
+[INFO]: new thread running in child: 115703
+[INFO]: thread state updated in target: 115703
+[INFO]: remote function call return value: 66
+[INFO] /Applications/Contacts.app/PlugIns/ContactsCoreSpotlightExtension.appex/ContactsCoreSpotlightExtension - pid: 479
+[INFO]: new thread running in child: 115803
+[INFO]: thread state updated in target: 115803
+[INFO]: remote function call return value: 61
+[INFO] /private/var/containers/Bundle/Application/9779E14F-D441-4252-9C5F-3282E0A7ADD1/Reddit.app/Reddit - pid: 480
+[INFO]: new thread running in child: 115903
+[INFO]: thread state updated in target: 115903
+[INFO]: remote function call return value: 5f
+[INFO] /private/var/containers/Bundle/Application/76BF7928-9F3D-4050-805D-1CFBB12FAB1F/Gmail.app/Gmail - pid: 481
+[INFO]: new thread running in child: 115a03
+[INFO]: thread state updated in target: 115a03
+[INFO]: remote function call return value: 65
+[INFO] /private/var/containers/Bundle/Application/7928E423-5A72-4089-834D-653A731DAC8D/Snapchat.app/Snapchat - pid: 482
+[INFO]: new thread running in child: 115b03
+[INFO]: thread state updated in target: 115b03
+[INFO]: remote function call return value: 3a
+[INFO] /Applications/Maps.app/PlugIns/MapsWidget.appex/MapsWidget - pid: 483
+[INFO]: new thread running in child: 115c03
+[INFO]: thread state updated in target: 115c03
+[INFO]: remote function call return value: 60
+[INFO] /System/Library/Frameworks/Metal.framework/XPCServices/MTLCompilerService.xpc/MTLCompilerService - pid: 485
+[INFO]: new thread running in child: 115d03
+[INFO]: thread state updated in target: 115d03
+[INFO]: remote function call return value: 60
+[INFO] /System/Library/Frameworks/Metal.framework/XPCServices/MTLCompilerService.xpc/MTLCompilerService - pid: 484
+[INFO]: new thread running in child: 115e03
+[INFO]: thread state updated in target: 115e03
+[INFO]: remote function call return value: 60
+[INFO] /System/Library/Frameworks/Metal.framework/XPCServices/MTLCompilerService.xpc/MTLCompilerService - pid: 488
+[INFO]: new thread running in child: 115f03
+[INFO]: thread state updated in target: 115f03
+[INFO]: remote function call return value: 79
+[INFO] /private/var/containers/Bundle/Application/D97A319F-7EEA-4616-9946-FBF870BE76C3/SXMLiveAudioPlayer.app/SXMLiveAudioPlayer - pid: 489
+[INFO]: new thread running in child: 116003
+[INFO]: thread state updated in target: 116003
+[INFO]: remote function call return value: 35
+[INFO] /Applications/SafariViewService.app/SafariViewService - pid: 490
+[INFO]: new thread running in child: 116103
+[INFO]: thread state updated in target: 116103
+[INFO]: remote function call return value: 73
+[INFO] /System/Library/Frameworks/WebKit.framework/XPCServices/com.apple.WebKit.Networking.xpc/com.apple.WebKit.Networking - pid: 491
+[INFO]: new thread running in child: 116203
+[INFO]: thread state updated in target: 116203
+[INFO]: remote function call return value: 2b
+[INFO] /Applications/MobileSafari.app/MobileSafari - pid: 493
+[INFO]: new thread running in child: 116303
+[INFO]: thread state updated in target: 116303
+[INFO]: remote function call return value: 73
+[INFO] /System/Library/Frameworks/WebKit.framework/XPCServices/com.apple.WebKit.Networking.xpc/com.apple.WebKit.Networking - pid: 494
+[INFO]: new thread running in child: 116403
+[INFO]: thread state updated in target: 116403
+[INFO]: remote function call return value: 73
+[INFO] /System/Library/Frameworks/WebKit.framework/XPCServices/com.apple.WebKit.WebContent.xpc/com.apple.WebKit.WebContent - pid: 495
+[INFO]: new thread running in child: 116503
+[INFO]: thread state updated in target: 116503
+[INFO]: remote function call return value: 60
+[INFO] /System/Library/Frameworks/Metal.framework/XPCServices/MTLCompilerService.xpc/MTLCompilerService - pid: 497
+[INFO]: new thread running in child: 116603
+[INFO]: thread state updated in target: 116603
+[INFO]: remote function call return value: 71
+[INFO] /System/Library/Frameworks/WebKit.framework/XPCServices/com.apple.WebKit.Databases.xpc/com.apple.WebKit.Databases - pid: 498
+[INFO]: new thread running in child: 116703
+[INFO]: thread state updated in target: 116703
+[INFO]: remote function call return value: 11
+[INFO] /usr/libexec/ptpd - pid: 499
+[INFO]: new thread running in child: 116803
+[INFO]: thread state updated in target: 116803
+[INFO]: remote function call return value: 1c
+[INFO] /usr/libexec/companion_proxy - pid: 501
+[INFO]: new thread running in child: 116903
+[INFO]: thread state updated in target: 116903
+[INFO]: remote function call return value: 1f
+[INFO] /usr/libexec/notification_proxy - pid: 502
+[INFO]: new thread running in child: 116a03
+[INFO]: thread state updated in target: 116a03
+[INFO]: remote function call return value: 11
+[INFO] /usr/libexec/afcd - pid: 503
+[INFO]: new thread running in child: 116b03
+[INFO]: thread state updated in target: 116b03
+[INFO]: remote function call return value: 21
+[INFO] /usr/libexec/mobile_storage_proxy - pid: 504
+[INFO]: new thread running in child: 116c03
+[INFO]: thread state updated in target: 116c03
+[INFO]: remote function call return value: 50
+[INFO] /System/Library/PrivateFrameworks/SyncedDefaults.framework/Support/syncdefaultsd - pid: 505
+[INFO]: new thread running in child: 116d03
+[INFO]: thread state updated in target: 116d03
+[INFO]: remote function call return value: 26
+[INFO] /usr/libexec/mobile_installation_proxy - pid: 507
+[INFO]: new thread running in child: 116e03
+[INFO]: thread state updated in target: 116e03
+[INFO]: remote function call return value: 19
+[INFO] /usr/libexec/syslog_relay - pid: 510
+[INFO]: new thread running in child: 116f03
+[INFO]: thread state updated in target: 116f03
+[INFO]: remote function call return value: 18
+[INFO] /usr/libexec/diagnosticd - pid: 511
+[INFO]: new thread running in child: 117003
+[INFO]: thread state updated in target: 117003
+[INFO]: remote function call return value: 54
+[INFO] /Developer/Library/PrivateFrameworks/DVTInstrumentsFoundation.framework/DTServiceHub - pid: 520
+[INFO]: new thread running in child: 117103
+[INFO]: thread state updated in target: 117103
+[INFO]: remote function call return value: 60
+[INFO] /System/Library/Frameworks/Metal.framework/XPCServices/MTLCompilerService.xpc/MTLCompilerService - pid: 521
+[INFO]: new thread running in child: 117203
+[INFO]: thread state updated in target: 117203
+[INFO]: remote function call return value: 60
+[INFO] /System/Library/Frameworks/Metal.framework/XPCServices/MTLCompilerService.xpc/MTLCompilerService - pid: 522
+[INFO]: new thread running in child: 117303
+[INFO]: thread state updated in target: 117303
+[INFO]: remote function call return value: 22
+[INFO] /usr/libexec/streaming_zip_conduit - pid: 523
+[INFO]: new thread running in child: 117403
+[INFO]: thread state updated in target: 117403
+[INFO]: remote function call return value: 88
+[INFO] /System/Library/PrivateFrameworks/StreamingZip.framework/XPCServices/com.apple.StreamingUnzipService.xpc/com.apple.StreamingUnzipService - pid: 524
+[INFO]: new thread running in child: 117503
+[INFO]: thread state updated in target: 117503
+[INFO]: remote function call return value: 1e
+[INFO] /Developer/usr/bin/debugserver - pid: 527
+[INFO]: new thread running in child: 117507
+[INFO]: thread state updated in target: 117507
+[INFO]: remote function call return value: 61
+[INFO] /private/var/containers/Bundle/Application/F407AE3F-0E94-4EFA-910B-C1C7568D4D08/Saigon.app/Saigon - pid: 532
+[INFO]: new thread running in child: 117603
+[INFO]: thread state updated in target: 117603
+[INFO]: remote function call return value: 18
+[INFO] /usr/bin/powerlogHelperd - pid: 533
+[INFO]: new thread running in child: 117703
+[INFO]: thread state updated in target: 117703
+[INFO]: remote function call return value: 28
+[INFO] /System/Library/CoreServices/ReportCrash - pid: 536
+[INFO]: new thread running in child: 117707
+[INFO]: thread state updated in target: 117707
+[INFO]: remote function call return value: 4a
+[INFO] /System/Library/Frameworks/LocalAuthentication.framework/Support/coreauthd - pid: 537
+[INFO]: amfid task port: 110807
+[INFO]: new thread running in child: 117903
+[INFO]: allocated a remote out buffer: 1001d8000
+[INFO]: thread state updated in target: 117903
+[INFO]: remote function call return value: 0
+[INFO]: new thread running in child: 117807
+[INFO]: thread state updated in target: 117807
+[INFO]: remote function call return value: 103
+[INFO]: new thread running in child: 11780b
+[INFO]: thread state updated in target: 11780b
+[INFO]: remote function call return value: 0
+set amfid exception port
+amfid load address: 0x1000e4000
+calling mach_msg to receive exception message from amfid on port 11770b
+libmis handle: 0x170165d00
+MISValidateSignatureAndCopyInfo: 0x19402fe3c
+patch_offset: 0x4140
+writing crashy value to 0x1000e8140
+[INFO]: new thread running in child: 117b03
+[INFO]: allocated a remote out buffer: 10018c000
+[INFO]: thread state updated in target: 117b03
+[INFO]: remote function call return value: 0
+[STEP] Running ziVA(3/4)
+[*] starting ziVA..
+[INFO]: Found matching exploitable service: AppleAVEDriver
+[INFO]: Setting offsets for driver: AppleAVEDriver
+[INFO]: new thread running in child: 12eb03
+[INFO]: allocated a remote out buffer: 10018c000
+[INFO]: thread state updated in target: 12eb03
+[INFO]: remote function call return value: 0
+[INFO]: new thread running in child: 12ea07
+[INFO]: allocated a remote out buffer: 10018c000
+[INFO]: thread state updated in target: 12ea07
+[INFO]: remote function call return value: 0
+[INFO]: Connection with service AppleAVEDriver was successfully made.
+[INFO]: added AppleAVE2 client
+[INFO]: created connection with IOSurfaceRoot
+[INFO]: successfully created surface
+[INFO]: successfully created a global surface with id: 195
+[ERROR]: got a surface id bigger than 9. Might fail.
+[INFO]: apple_ave_utils_prepare_to_encode_frames preparing to encode frames for connection
+[INFO]: Found matching exploitable service: AppleAVEDriver
+[INFO]: Setting offsets for driver: AppleAVEDriver
+[INFO]: new thread running in child: 12ee03
+[INFO]: allocated a remote out buffer: 10018c000
+[INFO]: thread state updated in target: 12ee03
+[INFO]: remote function call return value: 0
+[INFO]: new thread running in child: 12ed07
+[INFO]: allocated a remote out buffer: 10018c000
+[INFO]: thread state updated in target: 12ed07
+[INFO]: remote function call return value: 0
+[INFO]: Connection with service AppleAVEDriver was successfully made.
+[INFO]: apple_ave_utils_prepare_to_encode_frames preparing to encode frames for connection
+[ERROR]: Prepare to encode frame (error code: E00002BC)
+[ERROR]: preparing to encode frames...
+[INFO]: g_bad_surface_that_will_never_be_freed's kernel pointer is 0xfffffff120eea400
+[INFO]: successfully created surface
+[INFO]: apple_ave_utils_prepare_to_encode_frames preparing to encode frames for connection
+[INFO]: Found matching exploitable service: AppleAVEDriver
+[INFO]: Setting offsets for driver: AppleAVEDriver
+[INFO]: new thread running in child: 12f003
+[INFO]: allocated a remote out buffer: 10018c000
+[INFO]: thread state updated in target: 12f003
+[INFO]: remote function call return value: 0
+[INFO]: new thread running in child: 12ef07
+[INFO]: allocated a remote out buffer: 10018c000
+[INFO]: thread state updated in target: 12ef07
+[INFO]: remote function call return value: 0
+[INFO]: Connection with service AppleAVEDriver was successfully made.
+[INFO]: apple_ave_utils_prepare_to_encode_frames preparing to encode frames for connection
+[ERROR]: Prepare to encode frame (error code: E00002BC)
+[ERROR]: preparing to encode frames...
+[INFO]:kernel pointer of IOSurface object 214 is 0xfffffff11c416c00
+[INFO]: successfully created surface
+[INFO]: successfully created surface
+[INFO]: g_surface_id_to_leak_address 229[INFO]: apple_ave_utils_prepare_to_encode_frames preparing to encode frames for connection
+[INFO]: Found matching exploitable service: AppleAVEDriver
+[INFO]: Setting offsets for driver: AppleAVEDriver
+[INFO]: new thread running in child: 12f203
+[INFO]: allocated a remote out buffer: 10018c000
+[INFO]: thread state updated in target: 12f203
+[INFO]: remote function call return value: 0
+[INFO]: new thread running in child: 12f107
+[INFO]: allocated a remote out buffer: 10018c000
+[INFO]: thread state updated in target: 12f107
+[INFO]: remote function call return value: 0
+[INFO]: Connection with service AppleAVEDriver was successfully made.
+[INFO]: apple_ave_utils_prepare_to_encode_frames preparing to encode frames for connection
+[ERROR]: Prepare to encode frame (error code: E00002BC)
+[ERROR]: preparing to encode frames...
+[INFO]: kernel address of surface 229 is 0xfffffff11c5c0c00[INFO]:block to leak: 0xfffffff120eea5f8
+[INFO]:block to leak: 0xfffffff120eea5f8
+[INFO]:block to leak: 0xfffffff120eea5f8
+[INFO]:block to leak: 0xfffffff120eea5f8
+[INFO]:block to leak: 0xfffffff120eea5f8
+[INFO]:block to leak: 0xfffffff120eea5f8
+[INFO]:block to leak: 0xfffffff120eea5f8
+[INFO]:block to leak: 0xfffffff120eea5f8
+[INFO]:block to leak: 0xfffffff120eea5f8
+[INFO]:block to leak: 0xfffffff120eea5f8
+[INFO]:block to leak: 0xfffffff120eea5f8
+[INFO]:block to leak: 0xfffffff120eea5f8
+[INFO]:block to leak: 0xfffffff120eea5f8
+[INFO]:block to leak: 0xfffffff120eea5f8
+[INFO]:block to leak: 0xfffffff120eea5f8
+[INFO]:block to leak: 0xfffffff120eea5f8
+[INFO]:Leaked IOMemoryDescriptor: 0xf8000
+[INFO]:Leaked IOMemoryDescriptor: 0xf8000
+[INFO]:Leaked IOMemoryDescriptor: 0xf8000
+[INFO]:Leaked IOMemoryDescriptor: 0xf8000
+[INFO]:Leaked IOMemoryDescriptor: 0xf8000
+[INFO]:Leaked IOMemoryDescriptor: 0xf8000
+[INFO]:Leaked IOMemoryDescriptor: 0xf8000
+[INFO]:Leaked IOMemoryDescriptor: 0xf8000
+[INFO]:Leaked IOMemoryDescriptor: 0xf8000
+[INFO]:Leaked IOMemoryDescriptor: 0xf8000
+[INFO]:Leaked IOMemoryDescriptor: 0xf8000
+[INFO]:Leaked IOMemoryDescriptor: 0xf8000
+[INFO]:Leaked IOMemoryDescriptor: 0xf8000
+[INFO]:Leaked IOMemoryDescriptor: 0xf8000
+[INFO]:Leaked IOMemoryDescriptor: 0xf8000
+[INFO]:Leaked IOMemoryDescriptor: 0xf8000
+[INFO]:Before ORing: 0xf8000
+[INFO]:IOFence: 0xfffffff0000f8000
+[INFO]:block to leak: 0xfffffff0000f7fe8
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:block to leak: 0xfffffff0000f7fe8
+[INFO]:block to leak: 0xfffffff0000f7fe8
+[INFO]:block to leak: 0xfffffff0000f7fe8
+[INFO]:block to leak: 0xfffffff0000f7fe8
+[INFO]:block to leak: 0xfffffff0000f7fe8
+[INFO]:block to leak: 0xfffffff0000f7fe8
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:block to leak: 0xfffffff0000f7fe8
+[INFO]:block to leak: 0xfffffff0000f7fe8
+[INFO]:block to leak: 0xfffffff0000f7fe8
+[INFO]:block to leak: 0xfffffff0000f7fe8
+[INFO]:block to leak: 0xfffffff0000f7fe8
+[INFO]:block to leak: 0xfffffff0000f7fe8
+[INFO]:block to leak: 0xfffffff0000f7fe8
+[INFO]:block to leak: 0xfffffff0000f7fe8
+[INFO]:block to leak: 0xfffffff0000f7fe8
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+[INFO]:0xf8000 & 0xfff (0x0) != 0xfffffff006e7bd60 & 0xfff (0xd60)
+
