@@ -73,6 +73,7 @@ struct Logging {
         let workItem = DispatchWorkItem(qos: .userInitiated, flags: .assignCurrentContext) {
             
             // Do stuff
+            print("[STEP] triple_fetch(1/4)")
             self.mach_port = mach_port_t(do_exploit())
             
             DispatchQueue.main.async(execute: { () -> Void in
@@ -100,25 +101,26 @@ struct Logging {
             
             
             self.progressView.setProgress(1.0, animated: true)
-            
+            print("[STEP] Patching amfid(2/4)")
             if prepare_amfid(self.mach_port) == 1 {
                 
                 self.progressView.setProgress(0.5, animated: true)
                 self.tryButton.setTitle("privilege escalation..",for: .normal)
-                
+                print("[STEP] Running ziVA(3/4)")
                 // Run ziVA
                 if ziva_go(self.mach_port) == 1 {
                     
                     self.progressView.setProgress(0.9, animated: true)
-                    self.tryButton.setTitle("bypassing kpp..",for: .normal)
+                    self.tryButton.setTitle("Setting nonce..",for: .normal)
                     
-                    // Run extra_recipe (final step)
+                    print("[STEP] Setting nonce(4/4)")
+                    // Run generator setter (final step)
                     if set_generator("0dc448240696866b0cc1b2ac3eca4ce22af11cb3"){
                         self.progressView.setProgress(1.0, animated: true)
                         self.tryButton.isEnabled = false
                         self.tryButton.setTitle("done 🎉",for: .disabled)
                     } else {
-                        Logging.message = "bypassing KPP"
+                        Logging.message = "Setting Nonce"
                         self.showFailure()
                     }
                     
